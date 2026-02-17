@@ -630,6 +630,19 @@
 document.getElementById('championOverlay').addEventListener('click', () => {
     document.getElementById('championOverlay').classList.remove('show');
 });
+		function fitText() {
+  const el = document.querySelector('h1');
+  const container = el.parentElement;
+  let size = 100;
+  el.style.fontSize = size + 'px';
+  while (el.scrollWidth > container.clientWidth && size > 1) {
+    size--;
+    el.style.fontSize = size + 'px';
+  }
+}
+
+window.addEventListener('resize', fitText);
+window.addEventListener('load', fitText);
     </script>
 </body>
 </html>
