@@ -23,10 +23,10 @@
             font-family: 'Roboto Condensed', sans-serif;
             background: var(--light-gray);
             padding: 0.1rem;
-	    text-align: left;
-	    display: flex; /* Establishes the flex layout model */
-	    justify-content: center; /* Centers the .container horizontally */
-        }
+		    text-align: left;
+		    display: flex; /* Establishes the flex layout model */
+		    justify-content: center; /* Centers the .container horizontally */
+	        }
         .container {
             max-width: 100%;
             margin: 0.5;
@@ -46,22 +46,23 @@
         h1 {
             font-family: "Josefin Sans", sans-serif;
             font-size: 4.25rem;
-            color: var(--White);
-            letter-spacing: 2px;
+			color: var(--White);
+            letter-spacing: 1px;
             text-transform: uppercase;
-            font-weight: 800;
+            font-weight: 700;
             margin-bottom: 0.5rem;
 			white-space: nowrap;
 			overflow: hidden;
-			display: block;
         }
         .subtitle {
             font-family: "Josefin Sans", sans-serif;
-            font-size: 2.75rem;
-            color: var(--White);
+            font-size: 2.25rem;
+			color: var(--White);
             text-transform: uppercase;
             font-weight: 600;
    		    font-style: italic;
+			white-space: nowrap;
+			overflow: hidden;
         }
         .controls {
             display: flex;
@@ -350,7 +351,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Rules of the Road March Madness</h1>
+            <h1>Rules of the Road March Madness </h1>
             <p class="subtitle">Who rules the Rules?</p>
         </header>
         <div class="controls">
@@ -380,69 +381,69 @@
 			// Region 1
 			"LT Patrick Vivian",   //1
 			"BYE",            //16
-			"LT Jonathan Sodano",   //8
-			"LT Branden Ward",   //9
-			"LT Kevin Sweetman",   //5
+			"LT Tony Kennedy",   //8
+			"LT Ian Johnson",   //9
+			"LCDR Alexander Kavall",   //5
 			"William Lyons",   //12
-			"LT Geoff Welch",   //4
+			"CAPT Phil Lapointe",   //4
 			"BYE",            //13
-			"LT David Harland",   //6
-			"LT Robert Beurket",   //11
-			"LT Wyatt Moore",   //3
+			"LT Kellen Gray",   //6
+			"QMC Montraye Whaley",   //11
+			"Davis Chandler",   //3
 			"BYE",            //14
-			"LT Blake Fontaine",   //7
-			"LT Ben Severson",   //10
+			"LT Branner Astrop",   //7
+			"LT Benjamin Deforest",   //10
 			"David Kane",   //2
 			"BYE",            //15
 			// Region 2
 			"LT Meredith Engel",   //1
 			"BYE",            //16
-			"Walt O'Donnell",   //8
-			"Tanner Blythe",   //9
-			"Katie Moore",   //5
-			"Jerry Tredo",   //12
-			"LCDR Gregory Christod",   //4
+			"LCDR Jocelyn Addeo",   //8
+			"LT Ben Severson",   //9
+			"LT Kevin Sweetman",   //5
+			"LT Max Clausen",   //12
+			"LT Gabriel Ptasienski",   //4
 			"BYE",            //13
-			"LCDR Alexander Kavall",   //6
-			"QMC Montraye Whaley",   //11
-			"LT John O'Connell",   //3
+			"LT Alexander McQuain",   //6
+			"QMC Robert Papili",   //11
+			"LT Wyatt Moore",   //3
 			"BYE",            //14
-			"LT Branner Astrop",   //7
-			"LT Gregory Holmes",   //10
+			"LT Steven Tommasello",   //7
+			"QMCS Daniel Urbano",   //10
 			"Ted Olson",   //2
 			"BYE",            //15
 			// Region 3
 			"LT Kevin Brunner",   //1
 			"BYE",            //16
-			"QMC Jonathon Zitt",   //8
-			"LCDR Jocelyn Addeo",   //9
-			"David Parkhurst",   //5
+			"Walt O'Donnell",   //8
+			"LT Branden Ward",   //9
+			"Katie Moore",   //5
 			"BYE",   //12
-			"Davis Chandler",   //4
+			"LCDR Gregory Christod",   //4
 			"BYE",            //13
-			"LT Kellen Gray",   //6
-			"QMC Robert Papili",   //11
-			"LT Alex Egbers",   //3
+			"CAPT Leo Mcdonough",   //6
+			"Gerald Tredo",   //11
+			"LT John O'Connell",   //3
 			"BYE",            //14
-			"CAPT Leo Mcdonough",   //7
-			"QMCS Daniel Urbano",   //10
+			"LT Blake Fontaine",   //7
+			"LT Jacob Vehrs",   //10
 			"LT Seth Bradley",   //2
 			"BYE",            //15
 			// Region 4
 			"CAPT Michael Shanley",   //1
 			"BYE",            //16
-			"LT Tony Kennedy",   //8
-			"LT Ian Johnson",   //9
-			"CAPT Philip Lapointe",   //5
+			"QMC Jonathon Zitt",   //8
+			"Tanner Blythe",   //9
+			"David Parkhurst",   //5
 			"BYE",   //12
-			"LT Gabriel Ptasienski",   //4
+			"LT Geoff Welch",   //4
 			"BYE",            //13
-			"LT Alexander Mcquain",   //6
-			"LT Jacob Vehrs",   //11
-			"David Carrillo",   //3
+			"LT David Harland",   //6
+			"LT Robert Beurket",   //11
+			"LT Alex Egbers",   //3
 			"BYE",            //14
-			"LT Steven Tommasello",   //7
-			"LT Benjamin Deforest",   //10
+			"LT Jonathan Sodano",   //7
+			"LT Gregory Holmes",   //10
 			"Kat Hunter",   //2
 			"BYE"             //15
         ];
@@ -626,26 +627,36 @@
 		            zoomLevel = (viewW - 25) / contentW;
 		        }
 		        updateZoom();
-		    }, 300); 
+		    }, 350); 
 });
 
 // --- Allows user to click overlay to close it ---
 document.getElementById('championOverlay').addEventListener('click', () => {
     document.getElementById('championOverlay').classList.remove('show');
 });
-		function fitText() {
-  const el = document.querySelector('h1');
+function fitText(selector, buffer) {
+  const el = document.querySelector(selector);
+  if (!el) return;
   const container = el.parentElement;
-  let size = 100;
-  el.style.fontSize = size + 'px';
-  while (el.scrollWidth > container.clientWidth && size > 1) {
-    size--;
-    el.style.fontSize = size + 'px';
+  let low = 1, high = 300, size = 300;
+  while (low <= high) {
+    let mid = Math.floor((low + high) / 2);
+    el.style.fontSize = mid + 'px';
+    if (el.scrollWidth <= container.clientWidth - buffer) {
+      size = mid;
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
   }
+  el.style.fontSize = size + 'px';
 }
 
-window.addEventListener('resize', fitText);
-window.addEventListener('load', fitText);
-    </script>
-</body>
+window.addEventListener('resize', function() {
+  fitText('h1', 25);
+  const h1Size = parseFloat(document.querySelector('h1').style.fontSize);
+  document.querySelector('.subtitle').style.fontSize = (h1Size * 0.69) + 'px';
+});
+		</script>
+	</body>
 </html>
