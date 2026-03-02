@@ -1,0 +1,884 @@
+{
+  "r0-m0": {
+    "teams": [
+      {
+        "name": "LT Patrick Vivian",
+        "seed": 1
+      },
+      {
+        "name": "BYE",
+        "seed": 16
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Patrick Vivian vs. BYE"
+  },
+  "r0-m1": {
+    "teams": [
+      {
+        "name": "LT Tony Kennedy",
+        "seed": 8
+      },
+      {
+        "name": "LT Ian Johnson",
+        "seed": 9
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Tony Kennedy vs. LT Ian Johnson"
+  },
+  "r0-m2": {
+    "teams": [
+      {
+        "name": "LCDR Alexander Kavall",
+        "seed": 5
+      },
+      {
+        "name": "William Lyons",
+        "seed": 12
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LCDR Alexander Kavall vs. William Lyons"
+  },
+  "r0-m3": {
+    "teams": [
+      {
+        "name": "CAPT Phil Lapointe",
+        "seed": 4
+      },
+      {
+        "name": "BYE",
+        "seed": 13
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: CAPT Phil Lapointe vs. BYE"
+  },
+  "r0-m4": {
+    "teams": [
+      {
+        "name": "LT Kellen Gray",
+        "seed": 6
+      },
+      {
+        "name": "QMC Montraye Whaley",
+        "seed": 11
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Kellen Gray vs. QMC Montraye Whaley"
+  },
+  "r0-m5": {
+    "teams": [
+      {
+        "name": "Davis Chandler",
+        "seed": 3
+      },
+      {
+        "name": "BYE",
+        "seed": 14
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: Davis Chandler vs. BYE"
+  },
+  "r0-m6": {
+    "teams": [
+      {
+        "name": "LT Branner Astrop",
+        "seed": 7
+      },
+      {
+        "name": "LT Benjamin DeForest",
+        "seed": 10
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Branner Astrop vs. LT Benjamin DeForest"
+  },
+  "r0-m7": {
+    "teams": [
+      {
+        "name": "David Kane",
+        "seed": 2
+      },
+      {
+        "name": "BYE",
+        "seed": 15
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: David Kane vs. BYE"
+  },
+  "r0-m8": {
+    "teams": [
+      {
+        "name": "LT Meredith Engel",
+        "seed": 1
+      },
+      {
+        "name": "BYE",
+        "seed": 16
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Meredith Engel vs. BYE"
+  },
+  "r0-m9": {
+    "teams": [
+      {
+        "name": "LCDR Jocelyn Addeo",
+        "seed": 8
+      },
+      {
+        "name": "LT Ben Severson",
+        "seed": 9
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LCDR Jocelyn Addeo vs. LT Ben Severson"
+  },
+  "r0-m10": {
+    "teams": [
+      {
+        "name": "LT Kevin Sweetman",
+        "seed": 5
+      },
+      {
+        "name": "LT Max Clausen",
+        "seed": 12
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Kevin Sweetman vs. LT Max Clausen"
+  },
+  "r0-m11": {
+    "teams": [
+      {
+        "name": "LT Gabriel Ptasienski",
+        "seed": 4
+      },
+      {
+        "name": "BYE",
+        "seed": 13
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Gabriel Ptasienski vs. BYE"
+  },
+  "r0-m12": {
+    "teams": [
+      {
+        "name": "LT Alexander McQuain",
+        "seed": 6
+      },
+      {
+        "name": "QMC Robert Papili",
+        "seed": 11
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Alexander McQuain vs. QMC Robert Papili"
+  },
+  "r0-m13": {
+    "teams": [
+      {
+        "name": "LT Wyatt Moore",
+        "seed": 3
+      },
+      {
+        "name": "BYE",
+        "seed": 14
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Wyatt Moore vs. BYE"
+  },
+  "r0-m14": {
+    "teams": [
+      {
+        "name": "LT Steven Tommasello",
+        "seed": 7
+      },
+      {
+        "name": "QMCS Daniel Urbano",
+        "seed": 10
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Steven Tommasello vs. QMCS Daniel Urbano"
+  },
+  "r0-m15": {
+    "teams": [
+      {
+        "name": "Ted Olson",
+        "seed": 2
+      },
+      {
+        "name": "BYE",
+        "seed": 15
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: Ted Olson vs. BYE"
+  },
+  "r0-m16": {
+    "teams": [
+      {
+        "name": "LT Kevin Brunner",
+        "seed": 1
+      },
+      {
+        "name": "BYE",
+        "seed": 16
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Kevin Brunner vs. BYE"
+  },
+  "r0-m17": {
+    "teams": [
+      {
+        "name": "Walt O'Donnell",
+        "seed": 8
+      },
+      {
+        "name": "LT Branden Ward",
+        "seed": 9
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: Walt O'Donnell vs. LT Branden Ward"
+  },
+  "r0-m18": {
+    "teams": [
+      {
+        "name": "Katie Moore",
+        "seed": 5
+      },
+      {
+        "name": "BYE",
+        "seed": 12
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: Katie Moore vs. BYE"
+  },
+  "r0-m19": {
+    "teams": [
+      {
+        "name": "LCDR Gregory Christod",
+        "seed": 4
+      },
+      {
+        "name": "BYE",
+        "seed": 13
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LCDR Gregory Christod vs. BYE"
+  },
+  "r0-m20": {
+    "teams": [
+      {
+        "name": "CAPT Lee McDonough",
+        "seed": 6
+      },
+      {
+        "name": "Gerald Tredo",
+        "seed": 11
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: CAPT Lee McDonough vs. Gerald Tredo"
+  },
+  "r0-m21": {
+    "teams": [
+      {
+        "name": "LT John O'Connell",
+        "seed": 3
+      },
+      {
+        "name": "BYE",
+        "seed": 14
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT John O'Connell vs. BYE"
+  },
+  "r0-m22": {
+    "teams": [
+      {
+        "name": "LT Blake Fontaine",
+        "seed": 7
+      },
+      {
+        "name": "LT Jacob Vehrs",
+        "seed": 10
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Blake Fontaine vs. LT Jacob Vehrs"
+  },
+  "r0-m23": {
+    "teams": [
+      {
+        "name": "LT Seth Bradley",
+        "seed": 2
+      },
+      {
+        "name": "BYE",
+        "seed": 15
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Seth Bradley vs. BYE"
+  },
+  "r0-m24": {
+    "teams": [
+      {
+        "name": "CAPT Michael Shanley",
+        "seed": 1
+      },
+      {
+        "name": "BYE",
+        "seed": 16
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: CAPT Michael Shanley vs. BYE"
+  },
+  "r0-m25": {
+    "teams": [
+      {
+        "name": "QMC Jonathon Zitt",
+        "seed": 8
+      },
+      {
+        "name": "Tanner Blythe",
+        "seed": 9
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: QMC Jonathon Zitt vs. Tanner Blythe"
+  },
+  "r0-m26": {
+    "teams": [
+      {
+        "name": "David Parkhurst",
+        "seed": 5
+      },
+      {
+        "name": "BYE",
+        "seed": 12
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: David Parkhurst vs. BYE"
+  },
+  "r0-m27": {
+    "teams": [
+      {
+        "name": "LT Geoff Welch",
+        "seed": 4
+      },
+      {
+        "name": "BYE",
+        "seed": 13
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Geoff Welch vs. BYE"
+  },
+  "r0-m28": {
+    "teams": [
+      {
+        "name": "LT David Harland",
+        "seed": 6
+      },
+      {
+        "name": "LT Robert Beurket",
+        "seed": 11
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT David Harland vs. LT Robert Beurket"
+  },
+  "r0-m29": {
+    "teams": [
+      {
+        "name": "LT Alex Egbers",
+        "seed": 3
+      },
+      {
+        "name": "BYE",
+        "seed": 14
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Alex Egbers vs. BYE"
+  },
+  "r0-m30": {
+    "teams": [
+      {
+        "name": "LT Jonathan Sodano",
+        "seed": 7
+      },
+      {
+        "name": "LT Gregory Holmes",
+        "seed": 10
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: LT Jonathan Sodano vs. LT Gregory Holmes"
+  },
+  "r0-m31": {
+    "teams": [
+      {
+        "name": "Kat Hunter",
+        "seed": 2
+      },
+      {
+        "name": "BYE",
+        "seed": 15
+      }
+    ],
+    "winner": null,
+    "label": "FIRST ROUND: Kat Hunter vs. BYE"
+  },
+  "r1-m0": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Patrick Vivian vs. BYE) vs. Winner of (LT Tony Kennedy vs. LT Ian Johnson)"
+  },
+  "r1-m1": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LCDR Alexander Kavall vs. William Lyons) vs. Winner of (CAPT Phil Lapointe vs. BYE)"
+  },
+  "r1-m2": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Kellen Gray vs. QMC Montraye Whaley) vs. Winner of (Davis Chandler vs. BYE)"
+  },
+  "r1-m3": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Branner Astrop vs. LT Benjamin DeForest) vs. Winner of (David Kane vs. BYE)"
+  },
+  "r1-m4": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Meredith Engel vs. BYE) vs. Winner of (LCDR Jocelyn Addeo vs. LT Ben Severson)"
+  },
+  "r1-m5": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Kevin Sweetman vs. LT Max Clausen) vs. Winner of (LT Gabriel Ptasienski vs. BYE)"
+  },
+  "r1-m6": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Alexander McQuain vs. QMC Robert Papili) vs. Winner of (LT Wyatt Moore vs. BYE)"
+  },
+  "r1-m7": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Steven Tommasello vs. QMCS Daniel Urbano) vs. Winner of (Ted Olson vs. BYE)"
+  },
+  "r1-m8": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Kevin Brunner vs. BYE) vs. Winner of (Walt O'Donnell vs. LT Branden Ward)"
+  },
+  "r1-m9": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (Katie Moore vs. BYE) vs. Winner of (LCDR Gregory Christod vs. BYE)"
+  },
+  "r1-m10": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (CAPT Lee Mcdonough vs. Gerald Tredo) vs. Winner of (LT John O'Connell vs. BYE)"
+  },
+  "r1-m11": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Blake Fontaine vs. LT Jacob Vehrs) vs. Winner of (LT Seth Bradley vs. BYE)"
+  },
+  "r1-m12": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (CAPT Michael Shanley vs. BYE) vs. Winner of (QMC Jonathon Zitt vs. Tanner Blythe)"
+  },
+  "r1-m13": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (David Parkhurst vs. BYE) vs. Winner of (LT Geoff Welch vs. BYE)"
+  },
+  "r1-m14": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT David Harland vs. LT Robert Beurket) vs. Winner of (LT Alex Egbers vs. BYE)"
+  },
+  "r1-m15": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SECOND ROUND: Winner of (LT Jonathan Sodano vs. LT Gregory Holmes) vs. Winner of (Kat Hunter vs. BYE)"
+  },
+  "r2-m0": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m1": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m2": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m3": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m4": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m5": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m6": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r2-m7": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "SWEET 16: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r3-m0": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r3-m1": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r3-m2": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r3-m3": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r4-m0": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "FINAL 4: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r4-m1": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "FINAL 4: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  },
+  "r5-m0": {
+    "teams": [
+      {
+        "name": "TBD",
+        "seed": null
+      },
+      {
+        "name": "TBD",
+        "seed": null
+      }
+    ],
+    "winner": null,
+    "label": "CHAMPIONSHIP: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+  }
+}
