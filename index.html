@@ -354,14 +354,8 @@
             <h1>Rules of the Road March Madness </h1>
             <p class="subtitle">Who rules the Rules?</p>
         </header>
-        <div class="controls">
-            <!-- hide all this shit <button class="btn-NavyBlack" onclick="resetBracket()">Reset Bracket</button>
-            <button class="btn-Yellow" onclick="exportBracket()">Export Data</button> 
-            <div class="zoom-controls">
-                <button class="btn-secondary" onclick="zoomOut()">-</button>
-                <span id="zoomLevel">100%</span>
-                <button class="btn-secondary" onclick="zoomIn()">+</button>
-            </div> -->
+	<div class="controls">
+		<button id="exportBtn" class="btn-Yellow" onclick="exportBracket()" style="display: none;">Export Updated Data</button>
         </div>
         <div class="bracket-scroll" id="bracketScroll">
             <div class="bracket-container" id="bracketContainer">
@@ -377,98 +371,59 @@
         </div>
     </div>
     <script>
-        let players = [
-			// Region 1
-			"LT Patrick Vivian",   //1
-			"BYE",            //16
-			"LT Tony Kennedy",   //8
-			"LT Ian Johnson",   //9
-			"LCDR Alexander Kavall",   //5
-			"William Lyons",   //12
-			"CAPT Phil Lapointe",   //4
-			"BYE",            //13
-			"LT Kellen Gray",   //6
-			"QMC Montraye Whaley",   //11
-			"Davis Chandler",   //3
-			"BYE",            //14
-			"LT Branner Astrop",   //7
-			"LT Benjamin Deforest",   //10
-			"David Kane",   //2
-			"BYE",            //15
-			// Region 2
-			"LT Meredith Engel",   //1
-			"BYE",            //16
-			"LCDR Jocelyn Addeo",   //8
-			"LT Ben Severson",   //9
-			"LT Kevin Sweetman",   //5
-			"LT Max Clausen",   //12
-			"LT Gabriel Ptasienski",   //4
-			"BYE",            //13
-			"LT Alexander McQuain",   //6
-			"QMC Robert Papili",   //11
-			"LT Wyatt Moore",   //3
-			"BYE",            //14
-			"LT Steven Tommasello",   //7
-			"QMCS Daniel Urbano",   //10
-			"Ted Olson",   //2
-			"BYE",            //15
-			// Region 3
-			"LT Kevin Brunner",   //1
-			"BYE",            //16
-			"Walt O'Donnell",   //8
-			"LT Branden Ward",   //9
-			"Katie Moore",   //5
-			"BYE",   //12
-			"LCDR Gregory Christod",   //4
-			"BYE",            //13
-			"CAPT Lee McDonough",   //6
-			"Gerald Tredo",   //11
-			"LT John O'Connell",   //3
-			"BYE",            //14
-			"LT Blake Fontaine",   //7
-			"LT Jacob Vehrs",   //10
-			"LT Seth Bradley",   //2
-			"BYE",            //15
-			// Region 4
-			"CAPT Michael Shanley",   //1
-			"BYE",            //16
-			"QMC Jonathon Zitt",   //8
-			"Tanner Blythe",   //9
-			"David Parkhurst",   //5
-			"BYE",   //12
-			"LT Geoff Welch",   //4
-			"BYE",            //13
-			"LT David Harland",   //6
-			"LT Robert Beurket",   //11
-			"LT Alex Egbers",   //3
-			"BYE",            //14
-			"LT Jonathan Sodano",   //7
-			"LT Gregory Holmes",   //10
-			"Kat Hunter",   //2
-			"BYE"             //15
-        ];
+        // Global variables for the bracket data and settings
+        let bracketData = {};
+        let zoomLevel = 1;
+
+        // The rounds configuration remains, as it defines the structure
         const rounds = [
             { name: 'FIRST ROUND', matches: 32, class: 'round1' }, { name: 'SECOND ROUND', matches: 16, class: 'round2' }, { name: 'SWEET 16', matches: 8, class: 'round3' },
             { name: 'ELITE 8', matches: 4, class: 'round4' }, { name: 'FINAL 4', matches: 2, class: 'round5' }, { name: 'CHAMPIONSHIP', matches: 1, class: 'round6' }
         ];
-        let bracketData = {};
-        let zoomLevel = 1;
+
+        // --- NEW LOADING LOGIC ---
+        async function loadAndInitialize() {
+            // Check if the URL has "?admin=true" at the end
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('admin') === 'true') {
+                // If it does, find our hidden button and show it
+                const exportButton = document.getElementById('exportBtn');
+                if (exportButton) {
+                    exportButton.style.display = 'block';
+                }
+            }
+            // --- END OF BLOCK ---
+			try {
+                const response = await fetch('bracket.json');
+                if (!response.ok) {
+                    throw new Error('Could not load bracket.json. Make sure the file is in the same folder as your index.html.');
+                }
+                bracketData = await response.json();
+
+                // 1. Build the initial HTML structure of the bracket
+                initializeBracket();
+                
+                // 2. *** NEW STEP ***: Populate the bracket with winners from the file
+
+                // 3. Zoom to fit after a brief delay
+		        setTimeout(() => {
+		            const scrollEl = document.getElementById('bracketScroll');
+		            const container = document.getElementById('bracketContainer');
+		            const contentW = container.scrollWidth;
+		            const viewW = scrollEl.clientWidth;
+		            if (contentW > viewW) {
+		                zoomLevel = (viewW - 25) / contentW;
+		            }
+		            updateZoom();
+		        }, 350); 
+                
+            } catch (error) {
+                console.error("Error loading bracket:", error);
+                document.getElementById('bracket').innerHTML = `<p style="color: red; text-align: center;">${error.message}</p>`;
+            }
+        }
         
-        function zoomIn() {
-            zoomLevel = Math.min(zoomLevel + 0.1, 2);
-            updateZoom();
-        }
-        function zoomOut() {
-            zoomLevel = Math.max(zoomLevel - 0.1, 0.3);
-            updateZoom();
-        }
-        function updateZoom() {
-            const container = document.getElementById('bracketContainer');
-            container.style.zoom = zoomLevel;
-            document.getElementById('zoomLevel').textContent = Math.round(zoomLevel * 100) + '%';
-        }
         function initializeBracket() {
-            bracketData = {};
             const bracket = document.getElementById('bracket');
             bracket.innerHTML = '';
             const leftHalf = document.createElement('div');
@@ -495,38 +450,94 @@
             attachClickHandlers();
             attachHoverHandlers();
         }
+
         function createRound(round, roundIndex, startMatch, matchCount) {
             const roundDiv = document.createElement('div');
             roundDiv.className = `round ${round.class}`;
+
             const header = document.createElement('div');
             header.className = 'round-header';
             header.textContent = round.name;
             roundDiv.appendChild(header);
+
             const matchesDiv = document.createElement('div');
             matchesDiv.className = 'round-matches';
+
             for (let i = 0; i < matchCount; i++) {
                 const matchIndex = startMatch + i;
                 const matchId = `r${roundIndex}-m${matchIndex}`;
+                
                 const matchDiv = document.createElement('div');
                 matchDiv.className = 'match';
                 matchDiv.dataset.matchId = matchId;
-                if (roundIndex === 0) {
-                    const p1Index = matchIndex * 2, p2Index = matchIndex * 2 + 1;
-                    const seedPattern = [1, 16, 8, 9, 5, 12, 4, 13, 6, 11, 3, 14, 7, 10, 2, 15];
-                    const seed1 = seedPattern[(matchIndex % 8) * 2], seed2 = seedPattern[(matchIndex % 8) * 2 + 1];
-                    bracketData[matchId] = { teams: [{ name: players[p1Index], seed: seed1 }, { name: players[p2Index], seed: seed2 }], winner: null };
-                    matchDiv.innerHTML = `<div class="match-line"><div class="team" data-match="${matchId}" data-team="0"><span class="seed">${seed1}</span>${players[p1Index]}</div><div class="team" data-match="${matchId}" data-team="1"><span class="seed">${seed2}</span>${players[p2Index]}</div></div>`;
-                } else {
-                    bracketData[matchId] = { teams: [{ name: 'TBD', seed: null }, { name: 'TBD', seed: null }], winner: null };
-                    matchDiv.innerHTML = `<div class="match-line"><div class="team" data-match="${matchId}" data-team="0"><span class="seed">-</span>TBD</div><div class="team" data-match="${matchId}" data-team="1"><span class="seed">-</span>TBD</div></div>`;
+
+                // Get the specific match data from the pre-loaded bracketData
+                const matchData = bracketData[matchId];
+                if (!matchData) {
+                    console.warn(`Data for match ${matchId} not found.`);
+                    continue; // Skip if match data is missing
                 }
+
+                // *** THIS IS THE CORE FIX ***
+                // Instead of just taking the names, we now check if we need to
+                // populate them from a previous round's winner.
+                let team1 = matchData.teams[0];
+                let team2 = matchData.teams[1];
+
+                // For any round AFTER the first, we check for winners.
+                if (roundIndex > 0) {
+                    // Find the two matches from the PREVIOUS round that feed into this one.
+                    const prevMatchId1 = `r${roundIndex - 1}-m${matchIndex * 2}`;
+                    const prevMatchId2 = `r${roundIndex - 1}-m${matchIndex * 2 + 1}`;
+
+                    const prevMatch1 = bracketData[prevMatchId1];
+                    const prevMatch2 = bracketData[prevMatchId2];
+
+                    // If the first previous match has a winner, that winner becomes team1 here.
+                    if (prevMatch1 && prevMatch1.winner !== null) {
+                        team1 = prevMatch1.teams[prevMatch1.winner];
+                    }
+
+                    // If the second previous match has a winner, that winner becomes team2 here.
+                    if (prevMatch2 && prevMatch2.winner !== null) {
+                        team2 = prevMatch2.teams[prevMatch2.winner];
+                    }
+                }
+
+                // Build the HTML for the two teams in the match using the potentially updated team info.
+                matchDiv.innerHTML = `
+                    <div class="match-line">
+                        <div class="team" data-match="${matchId}" data-team="0"><span class="seed">${team1.seed || '-'}</span>${team1.name || 'TBD'}</div>
+                        <div class="team" data-match="${matchId}" data-team="1"><span class="seed">${team2.seed || '-'}</span>${team2.name || 'TBD'}</div>
+                    </div>
+                `;
+
+                // Now, check if the CURRENT match has a winner and apply styling.
+                if (matchData.winner !== null) {
+                    const teamsInMatch = matchDiv.querySelectorAll('.team');
+                    const winnerIndex = matchData.winner;
+                    const loserIndex = winnerIndex === 0 ? 1 : 0;
+                    
+                    if (teamsInMatch[winnerIndex]) teamsInMatch[winnerIndex].classList.add('winner');
+                    if (teamsInMatch[loserIndex]) teamsInMatch[loserIndex].classList.add('loser');
+                }
+                
                 matchesDiv.appendChild(matchDiv);
             }
             roundDiv.appendChild(matchesDiv);
             return roundDiv;
         }
+        // --- All functions below this line remain the same ---
         function attachClickHandlers() { document.querySelectorAll('.team').forEach(team => team.addEventListener('click', function() { selectWinner(this.dataset.match, parseInt(this.dataset.team)); })); }
         function attachHoverHandlers() { document.querySelectorAll('.team').forEach(team => { team.addEventListener('mouseenter', function() { const seedElement = this.querySelector('.seed'); if (seedElement) { highlightPlayer(this.textContent.trim().substring(seedElement.textContent.trim().length).trim()); } }); team.addEventListener('mouseleave', clearHighlights); }); }
+        
+        function zoomIn() { zoomLevel = Math.min(zoomLevel + 0.1, 2); updateZoom(); }
+        function zoomOut() { zoomLevel = Math.max(zoomLevel - 0.1, 0.3); updateZoom(); }
+        function updateZoom() {
+            const container = document.getElementById('bracketContainer');
+            container.style.zoom = zoomLevel;
+        }
+
         function selectWinner(matchId, teamIndex) {
             const match = bracketData[matchId];
             const selectedTeam = match.teams[teamIndex];
@@ -551,6 +562,7 @@
                 advanceWinner(matchId, selectedTeam);
             }
         }
+
         function advanceWinner(matchId, winningTeam) {
             const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
             if (roundNum >= rounds.length - 1) {
@@ -563,6 +575,7 @@
             const nextTeamDiv = document.querySelector(`[data-match-id="${nextMatchId}"] [data-team="${position}"]`);
             nextTeamDiv.innerHTML = `<span class="seed">${winningTeam.seed || '-'}</span>${winningTeam.name}`;
         }
+
         function clearFutureMatches(matchId) {
             const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
             if (roundNum >= rounds.length - 1) {
@@ -583,11 +596,10 @@
                 if (teamToClear) {
                     teamToClear.innerHTML = `<span class="seed">-</span>TBD`;
                 }
-                nextMatchDiv.querySelectorAll('.team').forEach(team => {
-                    team.classList.remove('winner', 'loser');
-                });
+                nextMatchDiv.querySelectorAll('.team').forEach(team => team.classList.remove('winner', 'loser'));
             }
         }
+
         function showChampion(name) {
             const overlay = document.getElementById('championOverlay');
             if (name) {
@@ -601,62 +613,77 @@
         function clearHighlights() { document.querySelectorAll('.team').forEach(team => team.classList.remove('highlighted')); }
         function resetBracket() {
             document.getElementById('championOverlay').classList.remove('show');
-            initializeBracket();
+            loadAndInitialize();
         }
+
         function exportBracket() {
-            const data = { players, bracket: bracketData, timestamp: new Date().toISOString() };
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const dataToSave = bracketData; 
+            const blob = new Blob([JSON.stringify(dataToSave, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
             a.download = 'tournament-bracket.json';
+            document.body.appendChild(a);
             a.click();
+            document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
+
+        window.addEventListener('load', loadAndInitialize);
+        document.getElementById('championOverlay').addEventListener('click', () => { document.getElementById('championOverlay').classList.remove('show'); });
         
-        // --- FINAL, CORRECTED INITIALIZATION LOGIC ---
-        window.addEventListener('load', () => {
-    		// A 100ms delay gives the browser time to render fonts after the page loads.
-		    setTimeout(() => {
-		        initializeBracket();
-		        const scrollEl = document.getElementById('bracketScroll');
-		        const container = document.getElementById('bracketContainer');
-		        const contentW = container.scrollWidth;
-		        const viewW = scrollEl.clientWidth;
-		        if (contentW > viewW) {
-		            zoomLevel = (viewW - 25) / contentW;
-		        }
-		        updateZoom();
-		    }, 350); 
-});
+        function fitText(selector, buffer) { const el = document.querySelector(selector); if (!el) return; const container = el.parentElement; let low = 1, high = 300, size = 300; while (low <= high) { let mid = Math.floor((low + high) / 2); el.style.fontSize = mid + 'px'; if (el.scrollWidth <= container.clientWidth - buffer) { size = mid; low = mid + 1; } else { high = mid - 1; } } el.style.fontSize = size + 'px'; }
+        window.addEventListener('resize', function() { fitText('h1', 25); const h1Size = parseFloat(document.querySelector('h1').style.fontSize); document.querySelector('.subtitle').style.fontSize = (h1Size * 0.69) + 'px'; });
 
-// --- Allows user to click overlay to close it ---
-document.getElementById('championOverlay').addEventListener('click', () => {
-    document.getElementById('championOverlay').classList.remove('show');
-});
-function fitText(selector, buffer) {
-  const el = document.querySelector(selector);
-  if (!el) return;
-  const container = el.parentElement;
-  let low = 1, high = 300, size = 300;
-  while (low <= high) {
-    let mid = Math.floor((low + high) / 2);
-    el.style.fontSize = mid + 'px';
-    if (el.scrollWidth <= container.clientWidth - buffer) {
-      size = mid;
-      low = mid + 1;
-    } else {
-      high = mid - 1;
-    }
-  }
-  el.style.fontSize = size + 'px';
-}
+		function exportBracket() {
+            // Create a deep copy of the data to avoid modifying the live bracket
+            const dataToExport = JSON.parse(JSON.stringify(bracketData));
 
-window.addEventListener('resize', function() {
-  fitText('h1', 25);
-  const h1Size = parseFloat(document.querySelector('h1').style.fontSize);
-  document.querySelector('.subtitle').style.fontSize = (h1Size * 0.69) + 'px';
-});
+            // Loop through all rounds and matches in our new export object
+            for (const matchId in dataToExport) {
+                const match = dataToExport[matchId];
+                const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
+                
+                const roundName = rounds[roundNum] ? rounds[roundNum].name : 'UNKNOWN ROUND';
+                let label = `${roundName}: `;
+
+                // For the first round, the label is simple: Team 1 vs Team 2
+                if (roundNum === 0) {
+                    const team1Name = match.teams[0] ? match.teams[0].name : 'TBD';
+                    const team2Name = match.teams[1] ? match.teams[1].name : 'TBD';
+                    label += `${team1Name} vs. ${team2Name}`;
+                } 
+                // For all later rounds, we build a descriptive label
+                else {
+                    const prevMatchId1 = `r${roundNum - 1}-m${matchNum * 2}`;
+                    const prevMatchId2 = `r${roundNum - 1}-m${matchNum * 2 + 1}`;
+                    
+                    const prevMatch1 = dataToExport[prevMatchId1];
+                    const prevMatch2 = dataToExport[prevMatchId2];
+
+                    const prevMatch1Desc = prevMatch1 ? `(${prevMatch1.teams[0].name} vs. ${prevMatch1.teams[1].name})` : 'Unknown Match';
+                    const prevMatch2Desc = prevMatch2 ? `(${prevMatch2.teams[0].name} vs. ${prevMatch2.teams[1].name})` : 'Unknown Match';
+
+                    label += `Winner of ${prevMatch1Desc} vs. Winner of ${prevMatch2Desc}`;
+                }
+                // Add the new human-readable label to the match object
+                match.label = label;
+            }
+
+            // Convert the enhanced object to JSON and trigger the download
+            const blob = new Blob([JSON.stringify(dataToExport, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'bracket.json'; // Name the file correctly
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
 		</script>
+	</body>
+</html>
 	</body>
 </html>
