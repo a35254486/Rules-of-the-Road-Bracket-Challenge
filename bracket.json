@@ -16,35 +16,35 @@
   "r0-m1": {
     "teams": [
       {
-        "name": "LT Tony Kennedy",
+        "name": "LCDR Jocelyn Addeo",
         "seed": 8
       },
       {
-        "name": "LT Ian Johnson",
+        "name": "LT Branden Ward",
         "seed": 9
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Tony Kennedy vs. LT Ian Johnson"
+    "label": "FIRST ROUND: LCDR Jocelyn Addeo vs. LT Branden Ward"
   },
   "r0-m2": {
     "teams": [
       {
-        "name": "LCDR Alexander Kavall",
+        "name": "LT Kevin Sweetman",
         "seed": 5
       },
       {
-        "name": "William Lyons",
+        "name": "BYE",
         "seed": 12
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LCDR Alexander Kavall vs. William Lyons"
+    "label": "FIRST ROUND: LT Kevin Sweetman vs. BYE"
   },
   "r0-m3": {
     "teams": [
       {
-        "name": "CAPT Phil Lapointe",
+        "name": "LT Gabriel Ptasienski",
         "seed": 4
       },
       {
@@ -53,21 +53,21 @@
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: CAPT Phil Lapointe vs. BYE"
+    "label": "FIRST ROUND: LT Gabriel Ptasienski vs. BYE"
   },
   "r0-m4": {
     "teams": [
       {
-        "name": "LT Kellen Gray",
+        "name": "LT Alexander McQuain",
         "seed": 6
       },
       {
-        "name": "QMC Montraye Whaley",
+        "name": "LT Robert Beurket",
         "seed": 11
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Kellen Gray vs. QMC Montraye Whaley"
+    "label": "FIRST ROUND: LT Alexander McQuain vs. LT Robert Beurket"
   },
   "r0-m5": {
     "teams": [
@@ -86,16 +86,16 @@
   "r0-m6": {
     "teams": [
       {
-        "name": "LT Branner Astrop",
+        "name": "LT Steven Tommasello",
         "seed": 7
       },
       {
-        "name": "LT Benjamin DeForest",
+        "name": "LT Jacob Vehrs",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Branner Astrop vs. LT Benjamin DeForest"
+    "label": "FIRST ROUND: LT Steven Tommasello vs. LT Jacob Vehrs"
   },
   "r0-m7": {
     "teams": [
@@ -128,35 +128,35 @@
   "r0-m9": {
     "teams": [
       {
-        "name": "LCDR Jocelyn Addeo",
+        "name": "Walt O'Donnell",
         "seed": 8
       },
       {
-        "name": "LT Ben Severson",
+        "name": "Tanner Blythe",
         "seed": 9
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LCDR Jocelyn Addeo vs. LT Ben Severson"
+    "label": "FIRST ROUND: Walt O'Donnell vs. Tanner Blythe"
   },
   "r0-m10": {
     "teams": [
       {
-        "name": "LT Kevin Sweetman",
+        "name": "Katie Moore",
         "seed": 5
       },
       {
-        "name": "LT Max Clausen",
+        "name": "BYE",
         "seed": 12
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Kevin Sweetman vs. LT Max Clausen"
+    "label": "FIRST ROUND: Katie Moore vs. BYE"
   },
   "r0-m11": {
     "teams": [
       {
-        "name": "LT Gabriel Ptasienski",
+        "name": "LCDR Gregory Christod",
         "seed": 4
       },
       {
@@ -165,21 +165,21 @@
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Gabriel Ptasienski vs. BYE"
+    "label": "FIRST ROUND: LCDR Gregory Christod vs. BYE"
   },
   "r0-m12": {
     "teams": [
       {
-        "name": "LT Alexander McQuain",
+        "name": "CAPT Lee McDonough",
         "seed": 6
       },
       {
-        "name": "QMC Robert Papili",
+        "name": "William Lyons",
         "seed": 11
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Alexander McQuain vs. QMC Robert Papili"
+    "label": "FIRST ROUND: CAPT Lee McDonough vs. William Lyons"
   },
   "r0-m13": {
     "teams": [
@@ -198,16 +198,16 @@
   "r0-m14": {
     "teams": [
       {
-        "name": "LT Steven Tommasello",
+        "name": "LT Blake Fontaine",
         "seed": 7
       },
       {
-        "name": "QMCS Daniel Urbano",
+        "name": "LT Gregory Holmes",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Steven Tommasello vs. QMCS Daniel Urbano"
+    "label": "FIRST ROUND: LT Blake Fontaine vs. LT Gregory Holmes"
   },
   "r0-m15": {
     "teams": [
@@ -240,21 +240,21 @@
   "r0-m17": {
     "teams": [
       {
-        "name": "Walt O'Donnell",
+        "name": "LT Ian Johnson",
         "seed": 8
       },
       {
-        "name": "LT Branden Ward",
+        "name": "LT Benjamin DeForest",
         "seed": 9
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: Walt O'Donnell vs. LT Branden Ward"
+    "label": "FIRST ROUND: LT Ian Johnson vs. LT Benjamin DeForest"
   },
   "r0-m18": {
     "teams": [
       {
-        "name": "Katie Moore",
+        "name": "David Parkhurst",
         "seed": 5
       },
       {
@@ -263,12 +263,12 @@
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: Katie Moore vs. BYE"
+    "label": "FIRST ROUND: David Parkhurst vs. BYE"
   },
   "r0-m19": {
     "teams": [
       {
-        "name": "LCDR Gregory Christod",
+        "name": "LT Geoff Welch",
         "seed": 4
       },
       {
@@ -277,21 +277,21 @@
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LCDR Gregory Christod vs. BYE"
+    "label": "FIRST ROUND: LT Geoff Welch vs. BYE"
   },
   "r0-m20": {
     "teams": [
       {
-        "name": "CAPT Lee McDonough",
+        "name": "LT David Harland",
         "seed": 6
       },
       {
-        "name": "Gerald Tredo",
+        "name": "LT Max Clausen",
         "seed": 11
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: CAPT Lee McDonough vs. Gerald Tredo"
+    "label": "FIRST ROUND: LT David Harland vs. LT Max Clausen"
   },
   "r0-m21": {
     "teams": [
@@ -310,16 +310,16 @@
   "r0-m22": {
     "teams": [
       {
-        "name": "LT Blake Fontaine",
+        "name": "LT Jonathan Sodano",
         "seed": 7
       },
       {
-        "name": "LT Jacob Vehrs",
+        "name": "QMC Montraye Whaley",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Blake Fontaine vs. LT Jacob Vehrs"
+    "label": "FIRST ROUND: LT Jonathan Sodano vs. QMC Montraye Whaley"
   },
   "r0-m23": {
     "teams": [
@@ -352,21 +352,21 @@
   "r0-m25": {
     "teams": [
       {
-        "name": "QMC Jonathon Zitt",
+        "name": "LT Ben Severson",
         "seed": 8
       },
       {
-        "name": "Tanner Blythe",
+        "name": "QMCS Daniel Urbano",
         "seed": 9
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: QMC Jonathon Zitt vs. Tanner Blythe"
+    "label": "FIRST ROUND: LT Ben Severson vs. QMCS Daniel Urbano"
   },
   "r0-m26": {
     "teams": [
       {
-        "name": "David Parkhurst",
+        "name": "LT Kellen Gray",
         "seed": 5
       },
       {
@@ -375,12 +375,12 @@
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: David Parkhurst vs. BYE"
+    "label": "FIRST ROUND: LT Kellen Gray vs. BYE"
   },
   "r0-m27": {
     "teams": [
       {
-        "name": "LT Geoff Welch",
+        "name": "LCDR Alexander Kavall",
         "seed": 4
       },
       {
@@ -389,21 +389,21 @@
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Geoff Welch vs. BYE"
+    "label": "FIRST ROUND: LCDR Alexander Kavall vs. BYE"
   },
   "r0-m28": {
     "teams": [
       {
-        "name": "LT David Harland",
+        "name": "LT Branner Astrop",
         "seed": 6
       },
       {
-        "name": "LT Robert Beurket",
+        "name": "BYE",
         "seed": 11
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT David Harland vs. LT Robert Beurket"
+    "label": "FIRST ROUND: LT Branner Astrop vs. BYE"
   },
   "r0-m29": {
     "teams": [
@@ -422,16 +422,16 @@
   "r0-m30": {
     "teams": [
       {
-        "name": "LT Jonathan Sodano",
+        "name": "LT Tony Kennedy",
         "seed": 7
       },
       {
-        "name": "LT Gregory Holmes",
+        "name": "QMC Robert Papili",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Jonathan Sodano vs. LT Gregory Holmes"
+    "label": "FIRST ROUND: LT Tony Kennedy vs. QMC Robert Papili"
   },
   "r0-m31": {
     "teams": [
@@ -459,7 +459,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Patrick Vivian vs. BYE) vs. Winner of (LT Tony Kennedy vs. LT Ian Johnson)"
+    "label": "SECOND ROUND: Winner of (LT Patrick Vivian vs. BYE) vs. Winner of (LCDR Jocelyn Addeo vs. LT Branden Ward)"
   },
   "r1-m1": {
     "teams": [
@@ -473,7 +473,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LCDR Alexander Kavall vs. William Lyons) vs. Winner of (CAPT Phil Lapointe vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Kevin Sweetman vs. BYE) vs. Winner of (LT Gabriel Ptasienski vs. BYE)"
   },
   "r1-m2": {
     "teams": [
@@ -487,7 +487,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Kellen Gray vs. QMC Montraye Whaley) vs. Winner of (Davis Chandler vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Alexander McQuain vs. LT Robert Beurket) vs. Winner of (Davis Chandler vs. BYE)"
   },
   "r1-m3": {
     "teams": [
@@ -501,7 +501,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Branner Astrop vs. LT Benjamin DeForest) vs. Winner of (David Kane vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Steven Tommasello vs. LT Jacob Vehrs) vs. Winner of (David Kane vs. BYE)"
   },
   "r1-m4": {
     "teams": [
@@ -515,7 +515,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Meredith Engel vs. BYE) vs. Winner of (LCDR Jocelyn Addeo vs. LT Ben Severson)"
+    "label": "SECOND ROUND: Winner of (LT Meredith Engel vs. BYE) vs. Winner of (Walt O'Donnell vs. Tanner Blythe)"
   },
   "r1-m5": {
     "teams": [
@@ -529,7 +529,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Kevin Sweetman vs. LT Max Clausen) vs. Winner of (LT Gabriel Ptasienski vs. BYE)"
+    "label": "SECOND ROUND: Winner of (Katie Moore vs. BYE) vs. Winner of (LCDR Gregory Christod vs. BYE)"
   },
   "r1-m6": {
     "teams": [
@@ -543,7 +543,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Alexander McQuain vs. QMC Robert Papili) vs. Winner of (LT Wyatt Moore vs. BYE)"
+    "label": "SECOND ROUND: Winner of (CAPT Lee McDonough vs. William Lyons) vs. Winner of (LT Wyatt Moore vs. BYE)"
   },
   "r1-m7": {
     "teams": [
@@ -557,7 +557,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Steven Tommasello vs. QMCS Daniel Urbano) vs. Winner of (Ted Olson vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Blake Fontaine vs. LT Gregory Holmes) vs. Winner of (Ted Olson vs. BYE)"
   },
   "r1-m8": {
     "teams": [
@@ -571,7 +571,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Kevin Brunner vs. BYE) vs. Winner of (Walt O'Donnell vs. LT Branden Ward)"
+    "label": "SECOND ROUND: Winner of (LT Kevin Brunner vs. BYE) vs. Winner of (LT Ian Johnson vs. LT Benjamin DeForest)"
   },
   "r1-m9": {
     "teams": [
@@ -585,7 +585,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (Katie Moore vs. BYE) vs. Winner of (LCDR Gregory Christod vs. BYE)"
+    "label": "SECOND ROUND: Winner of (David Parkhurst vs. BYE) vs. Winner of (LT Geoff Welch vs. BYE)"
   },
   "r1-m10": {
     "teams": [
@@ -599,7 +599,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (CAPT Lee Mcdonough vs. Gerald Tredo) vs. Winner of (LT John O'Connell vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT David Harland vs. LT Max Clausen) vs. Winner of (LT John O'Connell vs. BYE)"
   },
   "r1-m11": {
     "teams": [
@@ -613,7 +613,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Blake Fontaine vs. LT Jacob Vehrs) vs. Winner of (LT Seth Bradley vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Jonathan Sodano vs. QMC Montraye Whaley) vs. Winner of (LT Seth Bradley vs. BYE)"
   },
   "r1-m12": {
     "teams": [
@@ -627,7 +627,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (CAPT Michael Shanley vs. BYE) vs. Winner of (QMC Jonathon Zitt vs. Tanner Blythe)"
+    "label": "SECOND ROUND: Winner of (CAPT Michael Shanley vs. BYE) vs. Winner of (LT Ben Severson vs. QMCS Daniel Urbano)"
   },
   "r1-m13": {
     "teams": [
@@ -641,7 +641,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (David Parkhurst vs. BYE) vs. Winner of (LT Geoff Welch vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Kellen Gray vs. BYE) vs. Winner of (LCDR Alexander Kavall vs. BYE)"
   },
   "r1-m14": {
     "teams": [
@@ -655,7 +655,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT David Harland vs. LT Robert Beurket) vs. Winner of (LT Alex Egbers vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Branner Astrop vs. BYE) vs. Winner of (LT Alex Egbers vs. BYE)"
   },
   "r1-m15": {
     "teams": [
@@ -669,7 +669,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Jonathan Sodano vs. LT Gregory Holmes) vs. Winner of (Kat Hunter vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Tony Kennedy vs. QMC Robert Papili) vs. Winner of (Kat Hunter vs. BYE)"
   },
   "r2-m0": {
     "teams": [
