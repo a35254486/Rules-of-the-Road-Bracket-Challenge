@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules of the Road March Madness</title>
+    <title>Bracket Test Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
@@ -355,7 +355,14 @@
             <p class="subtitle">Who rules the Rules?</p>
         </header>
 	<div class="controls">
-		<button id="exportBtn" class="btn-Yellow" onclick="exportBracket()" style="display: none;">Export Updated Data</button>
+	    <button id="exportBtn" class="btn-Yellow" onclick="exportBracket()" style="display: none;">Export Updated Data</button>
+		<!-- hide all this shit <button class="btn-NavyBlack" onclick="resetBracket()">Reset Bracket</button>
+            <button class="btn-Yellow" onclick="exportBracket()">Export Data</button> 
+            <div class="zoom-controls">
+                <button class="btn-secondary" onclick="zoomOut()">-</button>
+                <span id="zoomLevel">100%</span>
+                <button class="btn-secondary" onclick="zoomIn()">+</button>
+            </div> -->
         </div>
         <div class="bracket-scroll" id="bracketScroll">
             <div class="bracket-container" id="bracketContainer">
@@ -370,7 +377,8 @@
             <div class="champion-name" id="championName"></div>
         </div>
     </div>
-    <script>
+
+<script>
         // Global variables for the bracket data and settings
         let bracketData = {};
         let zoomLevel = 1;
@@ -407,6 +415,10 @@
 
                 // 3. Zoom to fit after a brief delay
 		        setTimeout(() => {
+				// --- Run the text-fitting logic on initial load ---
+				fitText('h1', 25);
+				const h1Size = parseFloat(document.querySelector('h1').style.fontSize);
+				document.querySelector('.subtitle').style.fontSize = (h1Size * 0.69) + 'px';
 		            const scrollEl = document.getElementById('bracketScroll');
 		            const container = document.getElementById('bracketContainer');
 		            const contentW = container.scrollWidth;
@@ -415,7 +427,7 @@
 		                zoomLevel = (viewW - 25) / contentW;
 		            }
 		            updateZoom();
-		        }, 350); 
+		        }, 222); 
                 
             } catch (error) {
                 console.error("Error loading bracket:", error);
@@ -629,12 +641,32 @@
             URL.revokeObjectURL(url);
         }
 
-        window.addEventListener('load', loadAndInitialize);
+        window.addEventListener('load', () => {
+		    loadAndInitialize();
+		    fitBracket();
+		});
         document.getElementById('championOverlay').addEventListener('click', () => { document.getElementById('championOverlay').classList.remove('show'); });
         
         function fitText(selector, buffer) { const el = document.querySelector(selector); if (!el) return; const container = el.parentElement; let low = 1, high = 300, size = 300; while (low <= high) { let mid = Math.floor((low + high) / 2); el.style.fontSize = mid + 'px'; if (el.scrollWidth <= container.clientWidth - buffer) { size = mid; low = mid + 1; } else { high = mid - 1; } } el.style.fontSize = size + 'px'; }
-        window.addEventListener('resize', function() { fitText('h1', 25); const h1Size = parseFloat(document.querySelector('h1').style.fontSize); document.querySelector('.subtitle').style.fontSize = (h1Size * 0.69) + 'px'; });
+window.addEventListener('resize', function() { 
+	fitText('h1', 25); 
+	const h1Size = parseFloat(document.querySelector('h1').style.fontSize); 
+	document.querySelector('.subtitle').style.fontSize = (h1Size * 0.69) + 'px'; 
+          const scrollEl = document.getElementById('bracketScroll');
+          const container = document.getElementById('bracketContainer');
+	      const contentW = container.scrollWidth;
+          const viewW = scrollEl.clientWidth;
+          
+          let newZoomLevel = 1; // Default to 100%
 
+          if (contentW > viewW) {
+              newZoomLevel = (viewW - 10) / contentW;
+          }
+          
+          zoomLevel = newZoomLevel;
+          updateZoom(); // Apply the new zoom level
+          // --- END OF SURGICAL UPDATE ---
+        });
 		function exportBracket() {
             // Create a deep copy of the data to avoid modifying the live bracket
             const dataToExport = JSON.parse(JSON.stringify(bracketData));
@@ -683,7 +715,5 @@
         }
 
 		</script>
-	</body>
-</html>
 	</body>
 </html>
