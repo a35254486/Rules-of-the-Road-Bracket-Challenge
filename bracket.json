@@ -360,7 +360,7 @@
         "seed": 9
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "FIRST ROUND: LT Ben Severson vs. QMCS Daniel Urbano"
   },
   "r0-m26": {
@@ -622,8 +622,8 @@
         "seed": 1
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "QMCS Daniel Urbano",
+        "seed": 9
       }
     ],
     "winner": null,
@@ -767,7 +767,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (CAPT Michael Shanley vs. TBD) vs. Winner of (LT Kellen Gray vs. LCDR Alexander Kavall)"
+    "label": "SWEET 16: Winner of (CAPT Michael Shanley vs. QMCS Daniel Urbano) vs. Winner of (LT Kellen Gray vs. LCDR Alexander Kavall)"
   },
   "r2-m7": {
     "teams": [
