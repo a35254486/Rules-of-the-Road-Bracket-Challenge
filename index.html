@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules of the Road March Madness</title>
+    <title>Bracket Test Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
@@ -13,6 +13,7 @@
             --White: #FFFFFF;
             --light-gray: #F5F5F5;
             --border: #bbbbbb;
+			--loser: #B5B5B5
         }
         * {
             margin: 0;
@@ -70,17 +71,6 @@
             justify-content: center;
             margin-bottom: 0.5rem; ?=/*0.75*/
             flex-wrap: wrap;
-        }
-        .zoom-controls {
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-        }
-        .zoom-controls span {
-            font-weight: 600;
-            color: var(--NavyBlack);
-            min-width: 30px;
-            text-align: center;
         }
         button {
             font-family: 'Roboto Condensed', sans-serif;
@@ -210,12 +200,14 @@
             background: var(--NavyBlack);
             color: white;
             border-color: var(--NavyBlack);
-            font-weight: 700;
+            font-weight: 550;
         }
         .team.loser {
-            background: var(--light-grey);
-            color: #999;
+            background: var(--loser);
+            color: #7d7d7d;
             opacity: 0.6;
+            border-color: var(--border);
+
         }
         .team.highlighted {
             background: var(--Yellow);
@@ -223,6 +215,18 @@
             border-color: var(--Yellow);
             font-weight: 700;
         }
+		/* Make highlighted override winner state */
+		.team.highlighted.winner {
+		    background: var(--Yellow) !important;
+		    color: var(--NavyBlack) !important;
+		    border-color: var(--Yellow) !important;
+		}
+		.team.tbd {
+		    background-color: var(--White) !important;
+		    border-color: var(--NavyBlack) !important;
+		    color: var(--NavyBlack) !important;
+		    font-weight: normal !important;
+		}
         .seed {
             display: none;
         }
@@ -283,12 +287,8 @@
             max-width: 750px;
             height: auto;
             margin-bottom: 3rem;
-        }
-        .round1 .team:not(.winner):not(.loser) {
-            background-color: var(--NavyBlack);
-            color: white;
-            border-color: var(--NavyBlack);
-        }
+      
+		}
         .round1 .team:first-child:not(.winner):not(.loser) {
             border-bottom-color: white;
         }
@@ -296,7 +296,24 @@
             background-color: #FFFEF5;
             border-color: var(--Yellow);
             color: var(--NavyBlack);
-        }
+        }		
+		.team:not(.winner):not(.loser):not(.tbd) {
+		    background-color: var(--NavyBlack) !important;
+		    color: white !important;
+		    border-color: var(--NavyBlack) !important;
+		}
+		
+		/* This rule handles the white border between two active teams */
+		.team:not(.winner):not(.loser):not(.tbd) + .team:not(.winner):not(.loser):not(.tbd) {
+		    border-top-color: white !important;
+		}
+		
+		/* This rule handles the hover effect for the active teams */
+		.team:not(.winner):not(.loser):not(.tbd):hover {
+		    background-color: #FFFEF5 !important;
+		    border-color: var(--Yellow) !important;
+		    color: var(--NavyBlack) !important;
+		}
         .round5 .match::after,
         .round6 .match::after,
         .round5 .match::before,
@@ -493,36 +510,42 @@
                 // *** THIS IS THE CORE FIX ***
                 // Instead of just taking the names, we now check if we need to
                 // populate them from a previous round's winner.
-                let team1 = matchData.teams[0];
-                let team2 = matchData.teams[1];
+// ... (inside the createRound function, within the for loop)
 
-                // For any round AFTER the first, we check for winners.
-                if (roundIndex > 0) {
-                    // Find the two matches from the PREVIOUS round that feed into this one.
-                    const prevMatchId1 = `r${roundIndex - 1}-m${matchIndex * 2}`;
-                    const prevMatchId2 = `r${roundIndex - 1}-m${matchIndex * 2 + 1}`;
+// Get the potentially updated team info.
+let team1 = matchData.teams[0];
+let team2 = matchData.teams[1];
 
-                    const prevMatch1 = bracketData[prevMatchId1];
-                    const prevMatch2 = bracketData[prevMatchId2];
+if (roundIndex > 0) {
+    const prevMatchId1 = `r${roundIndex - 1}-m${matchIndex * 2}`;
+    const prevMatchId2 = `r${roundIndex - 1}-m${matchIndex * 2 + 1}`;
+    const prevMatch1 = bracketData[prevMatchId1];
+    const prevMatch2 = bracketData[prevMatchId2];
 
-                    // If the first previous match has a winner, that winner becomes team1 here.
-                    if (prevMatch1 && prevMatch1.winner !== null) {
-                        team1 = prevMatch1.teams[prevMatch1.winner];
-                    }
+    if (prevMatch1 && prevMatch1.winner !== null) {
+        team1 = prevMatch1.teams[prevMatch1.winner];
+    }
+    if (prevMatch2 && prevMatch2.winner !== null) {
+        team2 = prevMatch2.teams[prevMatch2.winner];
+    }
+}
+// Add the 'tbd' class if the team name is 'TBD'
+const team1TBDClass = (team1.name || 'TBD') === 'TBD' ? ' tbd' : '';
+const team2TBDClass = (team2.name || 'TBD') === 'TBD' ? ' tbd' : '';
 
-                    // If the second previous match has a winner, that winner becomes team2 here.
-                    if (prevMatch2 && prevMatch2.winner !== null) {
-                        team2 = prevMatch2.teams[prevMatch2.winner];
-                    }
-                }
+// Build the HTML for the two teams in the match.
+matchDiv.innerHTML = `
+    <div class="match-line">
+        <div class="team${team1TBDClass}" data-match="${matchId}" data-team="0">
+            <span class="seed">${team1.seed || '-'}</span>${team1.name || 'TBD'}
+        </div>
+        <div class="team${team2TBDClass}" data-match="${matchId}" data-team="1">
+            <span class="seed">${team2.seed || '-'}</span>${team2.name || 'TBD'}
+        </div>
+    </div>
+`;
 
-                // Build the HTML for the two teams in the match using the potentially updated team info.
-                matchDiv.innerHTML = `
-                    <div class="match-line">
-                        <div class="team" data-match="${matchId}" data-team="0"><span class="seed">${team1.seed || '-'}</span>${team1.name || 'TBD'}</div>
-                        <div class="team" data-match="${matchId}" data-team="1"><span class="seed">${team2.seed || '-'}</span>${team2.name || 'TBD'}</div>
-                    </div>
-                `;
+// ... (the rest of the function continues as before)
 
                 // Now, check if the CURRENT match has a winner and apply styling.
                 if (matchData.winner !== null) {
@@ -550,68 +573,92 @@
             container.style.zoom = zoomLevel;
         }
 
-        function selectWinner(matchId, teamIndex) {
-            const match = bracketData[matchId];
-            const selectedTeam = match.teams[teamIndex];
-            if (selectedTeam.name === 'TBD' || selectedTeam.name === 'BYE') return;
-            const isAlreadyDecided = match.winner !== null;
-            const isWinnerClicked = isAlreadyDecided && match.winner === teamIndex;
-            if (isAlreadyDecided) {
-                clearFutureMatches(matchId);
-            }
-            if (isWinnerClicked) {
-                match.winner = null;
-                const matchDiv = document.querySelector(`[data-match-id="${matchId}"]`);
-                matchDiv.querySelectorAll('.team').forEach(t => t.classList.remove('winner', 'loser'));
-            } else {
-                match.winner = teamIndex;
-                const matchDiv = document.querySelector(`[data-match-id="${matchId}"]`);
-                matchDiv.querySelectorAll('.team').forEach((t, idx) => {
-                    t.classList.remove('winner', 'loser');
-                    if (idx === teamIndex) t.classList.add('winner');
-                    else t.classList.add('loser');
-                });
-                advanceWinner(matchId, selectedTeam);
-            }
-        }
+function selectWinner(matchId, teamIndex) {
+    const match = bracketData[matchId];
+    const selectedTeam = match.teams[teamIndex];
+    if (selectedTeam.name === 'TBD' || selectedTeam.name === 'BYE') return;
+    
+    const isAlreadyDecided = match.winner !== null;
+    const isWinnerClicked = isAlreadyDecided && match.winner === teamIndex;
+    
+    // If this match already has a winner, clear all future progress first
+    if (isAlreadyDecided) {
+        clearFutureMatches(matchId);
+    }
+    
+    // If clicking the current winner, UNDO the decision
+    if (isWinnerClicked) {
+        match.winner = null;
+        const matchDiv = document.querySelector(`[data-match-id="${matchId}"]`);
+        matchDiv.querySelectorAll('.team').forEach(t => {
+            t.classList.remove('winner', 'loser');
+        });
+    } 
+    // Otherwise, set new winner
+    else {
+        match.winner = teamIndex;
+        const matchDiv = document.querySelector(`[data-match-id="${matchId}"]`);
+        matchDiv.querySelectorAll('.team').forEach((t, idx) => {
+            t.classList.remove('winner', 'loser');
+            if (idx === teamIndex) t.classList.add('winner');
+            else t.classList.add('loser');
+        });
+        advanceWinner(matchId, selectedTeam);
+    }
+}
+		function advanceWinner(matchId, winningTeam) {
+		    const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
+		    if (roundNum >= rounds.length - 1) {
+		        showChampion(winningTeam.name);
+		        return;
+		    }
+		    const nextMatchId = `r${roundNum + 1}-m${Math.floor(matchNum / 2)}`;
+		    const position = matchNum % 2;
+		    bracketData[nextMatchId].teams[position] = { name: winningTeam.name, seed: winningTeam.seed };
+		    const nextTeamDiv = document.querySelector(`[data-match-id="${nextMatchId}"] [data-team="${position}"]`);
+		    nextTeamDiv.innerHTML = `<span class="seed">${winningTeam.seed || '-'}</span>${winningTeam.name}`;
+		    
+		    // Remove tbd class so team becomes navy blue
+		    nextTeamDiv.classList.remove('tbd');
+		}
 
-        function advanceWinner(matchId, winningTeam) {
-            const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
-            if (roundNum >= rounds.length - 1) {
-                showChampion(winningTeam.name);
-                return;
-            }
-            const nextMatchId = `r${roundNum + 1}-m${Math.floor(matchNum / 2)}`;
-            const position = matchNum % 2;
-            bracketData[nextMatchId].teams[position] = { name: winningTeam.name, seed: winningTeam.seed };
-            const nextTeamDiv = document.querySelector(`[data-match-id="${nextMatchId}"] [data-team="${position}"]`);
-            nextTeamDiv.innerHTML = `<span class="seed">${winningTeam.seed || '-'}</span>${winningTeam.name}`;
+function clearFutureMatches(matchId) {
+    const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
+    
+    if (roundNum >= rounds.length - 1) {
+        showChampion(null);
+        return;
+    }
+    
+    const nextMatchId = `r${roundNum + 1}-m${Math.floor(matchNum / 2)}`;
+    const position = matchNum % 2;
+    
+    if (!bracketData[nextMatchId]) return;
+    
+    // If the next match has a winner, recursively clear future matches
+    if (bracketData[nextMatchId].winner !== null) {
+        clearFutureMatches(nextMatchId);
+    }
+    
+    // Reset the next match data
+    bracketData[nextMatchId].teams[position] = { name: 'TBD', seed: null };
+    bracketData[nextMatchId].winner = null;
+    
+    // Update the UI
+    const nextMatchDiv = document.querySelector(`[data-match-id="${nextMatchId}"]`);
+    if (nextMatchDiv) {
+        const teamToClear = nextMatchDiv.querySelector(`[data-team="${position}"]`);
+        if (teamToClear) {
+            teamToClear.innerHTML = `<span class="seed">-</span>TBD`;
+            teamToClear.classList.add('tbd'); // Add tbd class to make it white
+            teamToClear.classList.remove('winner', 'loser');
         }
-
-        function clearFutureMatches(matchId) {
-            const [roundNum, matchNum] = matchId.substring(1).split('-m').map(Number);
-            if (roundNum >= rounds.length - 1) {
-                showChampion(null);
-                return;
-            }
-            const nextMatchId = `r${roundNum + 1}-m${Math.floor(matchNum / 2)}`;
-            const position = matchNum % 2;
-            if (!bracketData[nextMatchId]) return;
-            if (bracketData[nextMatchId].winner !== null) {
-                clearFutureMatches(nextMatchId);
-            }
-            bracketData[nextMatchId].teams[position] = { name: 'TBD', seed: null };
-            bracketData[nextMatchId].winner = null;
-            const nextMatchDiv = document.querySelector(`[data-match-id="${nextMatchId}"]`);
-            if (nextMatchDiv) {
-                const teamToClear = nextMatchDiv.querySelector(`[data-team="${position}"]`);
-                if (teamToClear) {
-                    teamToClear.innerHTML = `<span class="seed">-</span>TBD`;
-                }
-                nextMatchDiv.querySelectorAll('.team').forEach(team => team.classList.remove('winner', 'loser'));
-            }
-        }
-
+        // Clear winner/loser from both teams in next match
+        nextMatchDiv.querySelectorAll('.team').forEach(team => {
+            team.classList.remove('winner', 'loser');
+        });
+    }
+}
         function showChampion(name) {
             const overlay = document.getElementById('championOverlay');
             if (name) {
@@ -628,20 +675,7 @@
             loadAndInitialize();
         }
 
-        function exportBracket() {
-            const dataToSave = bracketData; 
-            const blob = new Blob([JSON.stringify(dataToSave, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'tournament-bracket.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-
-        window.addEventListener('load', () => {
+			window.addEventListener('load', () => {
 		    loadAndInitialize();
 		    fitBracket();
 		});
@@ -713,7 +747,6 @@ window.addEventListener('resize', function() {
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
-
 		</script>
 	</body>
 </html>
