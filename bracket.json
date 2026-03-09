@@ -136,7 +136,7 @@
         "seed": 9
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: Walt O'Donnell vs. BYE"
   },
   "r0-m10": {
@@ -510,8 +510,8 @@
         "seed": 1
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "Walt O'Donnell",
+        "seed": 8
       }
     ],
     "winner": null,
@@ -711,7 +711,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (LT Meredith Engel vs. TBD) vs. Winner of (Tanner Blythe vs. LCDR Gregory Christod)"
+    "label": "SWEET 16: Winner of (LT Meredith Engel vs. Walt O'Donnell) vs. Winner of (Tanner Blythe vs. LCDR Gregory Christod)"
   },
   "r2-m3": {
     "teams": [
