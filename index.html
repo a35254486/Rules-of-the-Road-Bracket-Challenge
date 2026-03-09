@@ -90,7 +90,7 @@
         }
         .btn-NavyBlack:hover {
             background: #005266;
-            transform: translateY(-2px);
+/*            transform: translateY(-2px);*/
         }
         .btn-secondary {
             background: var(--Yellow);
@@ -98,7 +98,7 @@
         }
         .btn-secondary:hover {
             background: #D4A20D;
-            transform: translateY(-2px);
+/*            transform: translateY(-2px);*/
         }
         .btn-Yellow {
             background: white;
@@ -194,7 +194,7 @@
         .team:hover {
             border-color: var(--Yellow);
             background: #FFFEF5;
-            transform: translateX(3px);
+/*            transform: translateX(3px);*/
         }
         .team.winner {
             background: var(--NavyBlack);
@@ -276,8 +276,8 @@
         .bracket-half.right .match::after { left: auto; right: 100%; }
         .bracket-half.right .match:nth-child(odd)::before,
         .bracket-half.right .match:nth-child(even)::before { left: auto; right: calc(100% + 30px); }
-        .bracket-half.left .team:hover { transform: translateX(3px); }
-        .bracket-half.right .team:hover { transform: translateX(-3px); }
+        .bracket-half.left .team:hover { transform: translateX(0/*3*/px); }
+        .bracket-half.right .team:hover { transform: translateX(0/*-3*/px); }
         .bracket-half.left .round-header { text-align: right; }
         .bracket-half.right .round-header { text-align: left; }
         .bracket-scroll { overscroll-behavior-inline: contain; scroll-padding-inline: 24px; }
