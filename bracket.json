@@ -66,7 +66,7 @@
         "seed": 11
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: LT Alexander McQuain vs. BYE"
   },
   "r0-m5": {
@@ -94,7 +94,7 @@
         "seed": 10
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: LT Jacob Vehrs vs. BYE"
   },
   "r0-m7": {
@@ -178,7 +178,7 @@
         "seed": 11
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: CAPT Lee McDonough vs. BYE"
   },
   "r0-m13": {
@@ -206,7 +206,7 @@
         "seed": 10
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: LT Blake Fontaine vs. BYE"
   },
   "r0-m15": {
@@ -248,7 +248,7 @@
         "seed": 9
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: LT Ian Johnson vs. BYE"
   },
   "r0-m18": {
@@ -318,7 +318,7 @@
         "seed": 10
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FIRST ROUND: QMC Montraye Whaley vs. BYE"
   },
   "r0-m23": {
@@ -478,8 +478,8 @@
   "r1-m2": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Alexander McQuain",
+        "seed": 6
       },
       {
         "name": "Davis Chandler",
@@ -487,13 +487,13 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Alexander McQuain vs. LT Robert Beurket) vs. Winner of (Davis Chandler vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Alexander McQuain vs. BYE) vs. Winner of (Davis Chandler vs. BYE)"
   },
   "r1-m3": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Jacob Vehrs",
+        "seed": 7
       },
       {
         "name": "David Kane",
@@ -501,7 +501,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Steven Tommasello vs. LT Jacob Vehrs) vs. Winner of (David Kane vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Jacob Vehrs vs. BYE) vs. Winner of (David Kane vs. BYE)"
   },
   "r1-m4": {
     "teams": [
@@ -534,8 +534,8 @@
   "r1-m6": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "CAPT Lee McDonough",
+        "seed": 6
       },
       {
         "name": "LT Wyatt Moore",
@@ -543,13 +543,13 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (CAPT Lee McDonough vs. William Lyons) vs. Winner of (LT Wyatt Moore vs. BYE)"
+    "label": "SECOND ROUND: Winner of (CAPT Lee McDonough vs. BYE) vs. Winner of (LT Wyatt Moore vs. BYE)"
   },
   "r1-m7": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Blake Fontaine",
+        "seed": 7
       },
       {
         "name": "Ted Olson",
@@ -557,7 +557,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Blake Fontaine vs. LT Gregory Holmes) vs. Winner of (Ted Olson vs. BYE)"
+    "label": "SECOND ROUND: Winner of (LT Blake Fontaine vs. BYE) vs. Winner of (Ted Olson vs. BYE)"
   },
   "r1-m8": {
     "teams": [
@@ -566,12 +566,12 @@
         "seed": 1
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Ian Johnson",
+        "seed": 8
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Kevin Brunner vs. BYE) vs. Winner of (LT Ian Johnson vs. LT Benjamin DeForest)"
+    "label": "SECOND ROUND: Winner of (LT Kevin Brunner vs. BYE) vs. Winner of (LT Ian Johnson vs. BYE)"
   },
   "r1-m9": {
     "teams": [
@@ -604,8 +604,8 @@
   "r1-m11": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "QMC Montraye Whaley",
+        "seed": 7
       },
       {
         "name": "LT Seth Bradley",
@@ -613,7 +613,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Jonathan Sodano vs. QMC Montraye Whaley) vs. Winner of (LT Seth Bradley vs. BYE)"
+    "label": "SECOND ROUND: Winner of (QMC Montraye Whaley vs. BYE) vs. Winner of (LT Seth Bradley vs. BYE)"
   },
   "r1-m12": {
     "teams": [
@@ -697,7 +697,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (TBD vs. Davis Chandler) vs. Winner of (TBD vs. David Kane)"
+    "label": "SWEET 16: Winner of (LT Alexander McQuain vs. Davis Chandler) vs. Winner of (LT Jacob Vehrs vs. David Kane)"
   },
   "r2-m2": {
     "teams": [
@@ -725,7 +725,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (TBD vs. LT Wyatt Moore) vs. Winner of (TBD vs. Ted Olson)"
+    "label": "SWEET 16: Winner of (CAPT Lee McDonough vs. LT Wyatt Moore) vs. Winner of (LT Blake Fontaine vs. Ted Olson)"
   },
   "r2-m4": {
     "teams": [
@@ -739,7 +739,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (LT Kevin Brunner vs. TBD) vs. Winner of (David Parkhurst vs. LT Geoff Welch)"
+    "label": "SWEET 16: Winner of (LT Kevin Brunner vs. LT Ian Johnson) vs. Winner of (David Parkhurst vs. LT Geoff Welch)"
   },
   "r2-m5": {
     "teams": [
@@ -753,7 +753,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (LT David Harland vs. LT John O'Connell) vs. Winner of (TBD vs. LT Seth Bradley)"
+    "label": "SWEET 16: Winner of (LT David Harland vs. LT John O'Connell) vs. Winner of (QMC Montraye Whaley vs. LT Seth Bradley)"
   },
   "r2-m6": {
     "teams": [
