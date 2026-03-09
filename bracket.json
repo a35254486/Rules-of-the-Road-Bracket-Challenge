@@ -62,12 +62,12 @@
         "seed": 6
       },
       {
-        "name": "LT Robert Beurket",
+        "name": "BYE",
         "seed": 11
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Alexander McQuain vs. LT Robert Beurket"
+    "label": "FIRST ROUND: LT Alexander McQuain vs. BYE"
   },
   "r0-m5": {
     "teams": [
@@ -86,16 +86,16 @@
   "r0-m6": {
     "teams": [
       {
-        "name": "LT Steven Tommasello",
+        "name": "LT Jacob Vehrs",
         "seed": 7
       },
       {
-        "name": "LT Jacob Vehrs",
+        "name": "BYE",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Steven Tommasello vs. LT Jacob Vehrs"
+    "label": "FIRST ROUND: LT Jacob Vehrs vs. BYE"
   },
   "r0-m7": {
     "teams": [
@@ -174,12 +174,12 @@
         "seed": 6
       },
       {
-        "name": "William Lyons",
+        "name": "BYE",
         "seed": 11
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: CAPT Lee McDonough vs. William Lyons"
+    "label": "FIRST ROUND: CAPT Lee McDonough vs. BYE"
   },
   "r0-m13": {
     "teams": [
@@ -202,12 +202,12 @@
         "seed": 7
       },
       {
-        "name": "LT Gregory Holmes",
+        "name": "BYE",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Blake Fontaine vs. LT Gregory Holmes"
+    "label": "FIRST ROUND: LT Blake Fontaine vs. BYE"
   },
   "r0-m15": {
     "teams": [
@@ -244,12 +244,12 @@
         "seed": 8
       },
       {
-        "name": "LT Benjamin DeForest",
+        "name": "BYE",
         "seed": 9
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Ian Johnson vs. LT Benjamin DeForest"
+    "label": "FIRST ROUND: LT Ian Johnson vs. BYE"
   },
   "r0-m18": {
     "teams": [
@@ -310,16 +310,16 @@
   "r0-m22": {
     "teams": [
       {
-        "name": "LT Jonathan Sodano",
+        "name": "QMC Montraye Whaley",
         "seed": 7
       },
       {
-        "name": "QMC Montraye Whaley",
+        "name": "BYE",
         "seed": 10
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: LT Jonathan Sodano vs. QMC Montraye Whaley"
+    "label": "FIRST ROUND: QMC Montraye Whaley vs. BYE"
   },
   "r0-m23": {
     "teams": [
