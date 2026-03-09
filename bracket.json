@@ -132,17 +132,17 @@
         "seed": 8
       },
       {
-        "name": "Tanner Blythe",
+        "name": "BYE",
         "seed": 9
       }
     ],
     "winner": null,
-    "label": "FIRST ROUND: Walt O'Donnell vs. Tanner Blythe"
+    "label": "FIRST ROUND: Walt O'Donnell vs. BYE"
   },
   "r0-m10": {
     "teams": [
       {
-        "name": "Katie Moore",
+        "name": "Tanner Blythe",
         "seed": 5
       },
       {
@@ -151,7 +151,7 @@
       }
     ],
     "winner": 0,
-    "label": "FIRST ROUND: Katie Moore vs. BYE"
+    "label": "FIRST ROUND: Tanner Blythe vs. BYE"
   },
   "r0-m11": {
     "teams": [
@@ -515,12 +515,12 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (LT Meredith Engel vs. BYE) vs. Winner of (Walt O'Donnell vs. Tanner Blythe)"
+    "label": "SECOND ROUND: Winner of (LT Meredith Engel vs. BYE) vs. Winner of (Walt O'Donnell vs. BYE)"
   },
   "r1-m5": {
     "teams": [
       {
-        "name": "Katie Moore",
+        "name": "Tanner Blythe",
         "seed": 5
       },
       {
@@ -529,7 +529,7 @@
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (Katie Moore vs. BYE) vs. Winner of (LCDR Gregory Christod vs. BYE)"
+    "label": "SECOND ROUND: Winner of (Tanner Blythe vs. BYE) vs. Winner of (LCDR Gregory Christod vs. BYE)"
   },
   "r1-m6": {
     "teams": [
@@ -711,7 +711,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (LT Meredith Engel vs. TBD) vs. Winner of (Katie Moore vs. LCDR Gregory Christod)"
+    "label": "SWEET 16: Winner of (LT Meredith Engel vs. TBD) vs. Winner of (Tanner Blythe vs. LCDR Gregory Christod)"
   },
   "r2-m3": {
     "teams": [
