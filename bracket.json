@@ -1,10 +1,10 @@
 {
   "r0-m0": {
     "teams": [
-      { 
+      {
         "name": "LT Patrick Vivian",
         "seed": 1
-      },
+      }
       {
         "name": "BYE",
         "seed": 16
@@ -584,7 +584,7 @@
         "seed": 4
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (David Parkhurst vs. BYE) vs. Winner of (LT Geoff Welch vs. BYE)"
   },
   "r1-m10": {
@@ -598,7 +598,7 @@
         "seed": 3
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (LT David Harland vs. LT Max Clausen) vs. Winner of (LT John O'Connell vs. BYE)"
   },
   "r1-m11": {
@@ -734,8 +734,8 @@
         "seed": null
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Geoff Welch",
+        "seed": 4
       }
     ],
     "winner": null,
@@ -744,8 +744,8 @@
   "r2-m5": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT David Harland",
+        "seed": 6
       },
       {
         "name": "TBD",
@@ -823,7 +823,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "ELITE 8: Winner of (TBD vs. LT Geoff Welch) vs. Winner of (LT David Harland vs. TBD)"
   },
   "r3-m3": {
     "teams": [
