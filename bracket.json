@@ -556,7 +556,7 @@
         "seed": 2
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (LT Blake Fontaine vs. BYE) vs. Winner of (Ted Olson vs. BYE)"
   },
   "r1-m8": {
@@ -640,7 +640,7 @@
         "seed": 4
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (LT Kellen Gray vs. BYE) vs. Winner of (LCDR Alexander Kavall vs. BYE)"
   },
   "r1-m14": {
@@ -668,7 +668,7 @@
         "seed": 2
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (LT Tony Kennedy vs. QMC Robert Papili) vs. Winner of (Kat Hunter vs. BYE)"
   },
   "r2-m0": {
@@ -720,8 +720,8 @@
         "seed": null
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Blake Fontaine",
+        "seed": 7
       }
     ],
     "winner": null,
@@ -762,8 +762,8 @@
         "seed": null
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Kellen Gray",
+        "seed": 5
       }
     ],
     "winner": null,
@@ -776,8 +776,8 @@
         "seed": null
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Tony Kennedy",
+        "seed": 7
       }
     ],
     "winner": null,
@@ -809,7 +809,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. LT Blake Fontaine)"
   },
   "r3-m2": {
     "teams": [
@@ -837,7 +837,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "ELITE 8: Winner of (TBD vs. LT Kellen Gray) vs. Winner of (TBD vs. LT Tony Kennedy)"
   },
   "r4-m0": {
     "teams": [
