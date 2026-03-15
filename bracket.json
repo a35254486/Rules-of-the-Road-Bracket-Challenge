@@ -514,7 +514,7 @@
         "seed": 8
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (LT Meredith Engel vs. BYE) vs. Winner of (Walt O'Donnell vs. BYE)"
   },
   "r1-m5": {
@@ -542,7 +542,7 @@
         "seed": 3
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (CAPT Lee McDonough vs. BYE) vs. Winner of (LT Wyatt Moore vs. BYE)"
   },
   "r1-m7": {
@@ -570,7 +570,7 @@
         "seed": 8
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (LT Kevin Brunner vs. BYE) vs. Winner of (LT Ian Johnson vs. BYE)"
   },
   "r1-m9": {
@@ -626,7 +626,7 @@
         "seed": 9
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (CAPT Michael Shanley vs. BYE) vs. Winner of (LT Ben Severson vs. QMCS Daniel Urbano)"
   },
   "r1-m13": {
@@ -702,8 +702,8 @@
   "r2-m2": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "Walt O'Donnell",
+        "seed": 8
       },
       {
         "name": "TBD",
@@ -716,8 +716,8 @@
   "r2-m3": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "CAPT Lee McDonough",
+        "seed": 6
       },
       {
         "name": "LT Blake Fontaine",
@@ -730,8 +730,8 @@
   "r2-m4": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Kevin Brunner",
+        "seed": 1
       },
       {
         "name": "LT Geoff Welch",
@@ -758,8 +758,8 @@
   "r2-m6": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "QMCS Daniel Urbano",
+        "seed": 9
       },
       {
         "name": "LT Kellen Gray",
@@ -809,7 +809,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. LT Blake Fontaine)"
+    "label": "ELITE 8: Winner of (Walt O'Donnell vs. TBD) vs. Winner of (CAPT Lee McDonough vs. LT Blake Fontaine)"
   },
   "r3-m2": {
     "teams": [
@@ -823,7 +823,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (TBD vs. LT Geoff Welch) vs. Winner of (LT David Harland vs. TBD)"
+    "label": "ELITE 8: Winner of (LT Kevin Brunner vs. LT Geoff Welch) vs. Winner of (LT David Harland vs. TBD)"
   },
   "r3-m3": {
     "teams": [
@@ -837,7 +837,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (TBD vs. LT Kellen Gray) vs. Winner of (TBD vs. LT Tony Kennedy)"
+    "label": "ELITE 8: Winner of (QMCS Daniel Urbano vs. LT Kellen Gray) vs. Winner of (TBD vs. LT Tony Kennedy)"
   },
   "r4-m0": {
     "teams": [
