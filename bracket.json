@@ -612,7 +612,7 @@
         "seed": 2
       }
     ],
-    "winner": 0,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (QMC Montraye Whaley vs. BYE) vs. Winner of (LT Seth Bradley vs. BYE)"
   },
   "r1-m12": {
@@ -748,8 +748,8 @@
         "seed": 6
       },
       {
-        "name": "QMC Montraye Whaley",
-        "seed": 7
+        "name": "LT Seth Bradley",
+        "seed": 2
       }
     ],
     "winner": null,
@@ -823,7 +823,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (LT Kevin Brunner vs. LT Geoff Welch) vs. Winner of (LT David Harland vs. QMC Montraye Whaley)"
+    "label": "ELITE 8: Winner of (LT Kevin Brunner vs. LT Geoff Welch) vs. Winner of (LT David Harland vs. LT Seth Bradley)"
   },
   "r3-m3": {
     "teams": [
