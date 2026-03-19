@@ -500,7 +500,7 @@
         "seed": 2
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (LT Jacob Vehrs vs. BYE) vs. Winner of (David Kane vs. BYE)"
   },
   "r1-m4": {
@@ -692,8 +692,8 @@
         "seed": 3
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "David Kane",
+        "seed": 2
       }
     ],
     "winner": null,
@@ -795,7 +795,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (LT Branden Ward vs. TBD) vs. Winner of (Davis Chandler vs. TBD)"
+    "label": "ELITE 8: Winner of (LT Branden Ward vs. TBD) vs. Winner of (Davis Chandler vs. David Kane)"
   },
   "r3-m1": {
     "teams": [
