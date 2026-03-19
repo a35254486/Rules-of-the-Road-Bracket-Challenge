@@ -156,7 +156,7 @@
   "r0-m11": {
     "teams": [
       {
-        "name": "LCDR Gregory Christod",
+        "name": "LT Caleb Isbell",
         "seed": 4
       },
       {
@@ -165,7 +165,7 @@
       }
     ],
     "winner": 0,
-    "label": "FIRST ROUND: LCDR Gregory Christod vs. BYE"
+    "label": "FIRST ROUND: LT Caleb Isbell vs. BYE"
   },
   "r0-m12": {
     "teams": [
@@ -524,12 +524,12 @@
         "seed": 5
       },
       {
-        "name": "LCDR Gregory Christod",
+        "name": "LT Caleb Isbell",
         "seed": 4
       }
     ],
     "winner": null,
-    "label": "SECOND ROUND: Winner of (Tanner Blythe vs. BYE) vs. Winner of (LCDR Gregory Christod vs. BYE)"
+    "label": "SECOND ROUND: Winner of (Tanner Blythe vs. BYE) vs. Winner of (LT Caleb Isbell vs. BYE)"
   },
   "r1-m6": {
     "teams": [
@@ -711,7 +711,7 @@
       }
     ],
     "winner": null,
-    "label": "SWEET 16: Winner of (LT Meredith Engel vs. Walt O'Donnell) vs. Winner of (Tanner Blythe vs. LCDR Gregory Christod)"
+    "label": "SWEET 16: Winner of (LT Meredith Engel vs. Walt O'Donnell) vs. Winner of (Tanner Blythe vs. LT Caleb Isbell)"
   },
   "r2-m3": {
     "teams": [
