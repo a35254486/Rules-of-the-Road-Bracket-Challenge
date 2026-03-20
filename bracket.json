@@ -472,7 +472,7 @@
         "seed": 4
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (LT Kevin Sweetman vs. BYE) vs. Winner of (LT Gabriel Ptasienski vs. BYE)"
   },
   "r1-m2": {
@@ -528,7 +528,7 @@
         "seed": 4
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SECOND ROUND: Winner of (Tanner Blythe vs. BYE) vs. Winner of (LT Caleb Isbell vs. BYE)"
   },
   "r1-m6": {
@@ -678,8 +678,8 @@
         "seed": 9
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Gabriel Ptasienski",
+        "seed": 4
       }
     ],
     "winner": null,
@@ -706,8 +706,8 @@
         "seed": 8
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Caleb Isbell",
+        "seed": 4
       }
     ],
     "winner": null,
@@ -795,7 +795,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (LT Branden Ward vs. TBD) vs. Winner of (Davis Chandler vs. David Kane)"
+    "label": "ELITE 8: Winner of (LT Branden Ward vs. LT Gabriel Ptasienski) vs. Winner of (Davis Chandler vs. David Kane)"
   },
   "r3-m1": {
     "teams": [
@@ -809,7 +809,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (Walt O'Donnell vs. TBD) vs. Winner of (CAPT Lee McDonough vs. LT Blake Fontaine)"
+    "label": "ELITE 8: Winner of (Walt O'Donnell vs. LT Caleb Isbell) vs. Winner of (CAPT Lee McDonough vs. LT Blake Fontaine)"
   },
   "r3-m2": {
     "teams": [
