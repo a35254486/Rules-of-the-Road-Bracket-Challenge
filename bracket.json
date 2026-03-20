@@ -528,7 +528,7 @@
         "seed": 4
       }
     ],
-    "winner": 1,
+    "winner": 0,
     "label": "SECOND ROUND: Winner of (Tanner Blythe vs. BYE) vs. Winner of (LT Caleb Isbell vs. BYE)"
   },
   "r1-m6": {
@@ -706,8 +706,8 @@
         "seed": 8
       },
       {
-        "name": "LT Caleb Isbell",
-        "seed": 4
+        "name": "Tanner Blythe",
+        "seed": 5
       }
     ],
     "winner": null,
@@ -809,7 +809,7 @@
       }
     ],
     "winner": null,
-    "label": "ELITE 8: Winner of (Walt O'Donnell vs. LT Caleb Isbell) vs. Winner of (CAPT Lee McDonough vs. LT Blake Fontaine)"
+    "label": "ELITE 8: Winner of (Walt O'Donnell vs. Tanner Blythe) vs. Winner of (CAPT Lee McDonough vs. LT Blake Fontaine)"
   },
   "r3-m2": {
     "teams": [
