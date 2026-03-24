@@ -682,7 +682,7 @@
         "seed": 4
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SWEET 16: Winner of (LT Patrick Vivian vs. LT Branden Ward) vs. Winner of (LT Kevin Sweetman vs. LT Gabriel Ptasienski)"
   },
   "r2-m1": {
@@ -786,8 +786,8 @@
   "r3-m0": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Gabriel Ptasienski",
+        "seed": 4
       },
       {
         "name": "TBD",
@@ -851,7 +851,7 @@
       }
     ],
     "winner": null,
-    "label": "FINAL 4: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "FINAL 4: Winner of (LT Gabriel Ptasienski vs. TBD) vs. Winner of (TBD vs. TBD)"
   },
   "r4-m1": {
     "teams": [
