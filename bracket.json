@@ -724,7 +724,7 @@
         "seed": 7
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SWEET 16: Winner of (CAPT Lee McDonough vs. LT Wyatt Moore) vs. Winner of (LT Blake Fontaine vs. Ted Olson)"
   },
   "r2-m4": {
@@ -804,8 +804,8 @@
         "seed": 8
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Blake Fontaine",
+        "seed": 7
       }
     ],
     "winner": null,
@@ -851,7 +851,7 @@
       }
     ],
     "winner": null,
-    "label": "FINAL 4: Winner of (LT Gabriel Ptasienski vs. TBD) vs. Winner of (Walt O'Donnell vs. TBD)"
+    "label": "FINAL 4: Winner of (LT Gabriel Ptasienski vs. TBD) vs. Winner of (Walt O'Donnell vs. LT Blake Fontaine)"
   },
   "r4-m1": {
     "teams": [
