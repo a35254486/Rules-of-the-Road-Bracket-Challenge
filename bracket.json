@@ -738,7 +738,7 @@
         "seed": 4
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "SWEET 16: Winner of (LT Kevin Brunner vs. LT Ian Johnson) vs. Winner of (David Parkhurst vs. LT Geoff Welch)"
   },
   "r2-m5": {
@@ -814,8 +814,8 @@
   "r3-m2": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Geoff Welch",
+        "seed": 4
       },
       {
         "name": "TBD",
@@ -865,7 +865,7 @@
       }
     ],
     "winner": null,
-    "label": "FINAL 4: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "FINAL 4: Winner of (LT Geoff Welch vs. TBD) vs. Winner of (TBD vs. TBD)"
   },
   "r5-m0": {
     "teams": [
