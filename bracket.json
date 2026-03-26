@@ -752,7 +752,7 @@
         "seed": 2
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SWEET 16: Winner of (LT David Harland vs. LT John O'Connell) vs. Winner of (QMC Montraye Whaley vs. LT Seth Bradley)"
   },
   "r2-m6": {
@@ -780,7 +780,7 @@
         "seed": 7
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SWEET 16: Winner of (LT Branner Astrop vs. LT Alex Egbers) vs. Winner of (LT Tony Kennedy vs. Kat Hunter)"
   },
   "r3-m0": {
@@ -818,8 +818,8 @@
         "seed": 4
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT David Harland",
+        "seed": 6
       }
     ],
     "winner": null,
@@ -832,8 +832,8 @@
         "seed": null
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Branner Astrop",
+        "seed": 6
       }
     ],
     "winner": null,
@@ -865,7 +865,7 @@
       }
     ],
     "winner": null,
-    "label": "FINAL 4: Winner of (LT Geoff Welch vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "FINAL 4: Winner of (LT Geoff Welch vs. LT David Harland) vs. Winner of (TBD vs. LT Branner Astrop)"
   },
   "r5-m0": {
     "teams": [
