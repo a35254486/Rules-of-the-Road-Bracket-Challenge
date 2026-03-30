@@ -696,7 +696,7 @@
         "seed": 2
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "SWEET 16: Winner of (LT Alexander McQuain vs. Davis Chandler) vs. Winner of (LT Jacob Vehrs vs. David Kane)"
   },
   "r2-m2": {
@@ -790,8 +790,8 @@
         "seed": 4
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "Davis Chandler",
+        "seed": 3
       }
     ],
     "winner": null,
@@ -851,7 +851,7 @@
       }
     ],
     "winner": null,
-    "label": "FINAL 4: Winner of (LT Gabriel Ptasienski vs. TBD) vs. Winner of (Walt O'Donnell vs. LT Blake Fontaine)"
+    "label": "FINAL 4: Winner of (LT Gabriel Ptasienski vs. Davis Chandler) vs. Winner of (Walt O'Donnell vs. LT Blake Fontaine)"
   },
   "r4-m1": {
     "teams": [
