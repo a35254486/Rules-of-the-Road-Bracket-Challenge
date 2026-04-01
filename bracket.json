@@ -808,7 +808,7 @@
         "seed": 7
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "ELITE 8: Winner of (Walt O'Donnell vs. Tanner Blythe) vs. Winner of (CAPT Lee McDonough vs. LT Blake Fontaine)"
   },
   "r3-m2": {
@@ -846,8 +846,8 @@
         "seed": null
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Blake Fontaine",
+        "seed": 7
       }
     ],
     "winner": null,
@@ -879,6 +879,6 @@
       }
     ],
     "winner": null,
-    "label": "CHAMPIONSHIP: Winner of (TBD vs. TBD) vs. Winner of (TBD vs. TBD)"
+    "label": "CHAMPIONSHIP: Winner of (TBD vs. LT Blake Fontaine) vs. Winner of (TBD vs. TBD)"
   }
 }
