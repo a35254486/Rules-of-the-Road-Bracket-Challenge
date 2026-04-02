@@ -794,7 +794,7 @@
         "seed": 3
       }
     ],
-    "winner": null,
+    "winner": 1,
     "label": "ELITE 8: Winner of (LT Branden Ward vs. LT Gabriel Ptasienski) vs. Winner of (Davis Chandler vs. David Kane)"
   },
   "r3-m1": {
@@ -822,7 +822,7 @@
         "seed": 6
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "ELITE 8: Winner of (LT Kevin Brunner vs. LT Geoff Welch) vs. Winner of (LT David Harland vs. LT Seth Bradley)"
   },
   "r3-m3": {
@@ -836,14 +836,14 @@
         "seed": 6
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "ELITE 8: Winner of (QMCS Daniel Urbano vs. LT Kellen Gray) vs. Winner of (LT Branner Astrop vs. LT Tony Kennedy)"
   },
   "r4-m0": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "Davis Chandler",
+        "seed": 3
       },
       {
         "name": "LT Blake Fontaine",
@@ -856,12 +856,12 @@
   "r4-m1": {
     "teams": [
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Geoff Welch",
+        "seed": 4
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Kellen Gray",
+        "seed": 5
       }
     ],
     "winner": null,
@@ -879,6 +879,6 @@
       }
     ],
     "winner": null,
-    "label": "CHAMPIONSHIP: Winner of (TBD vs. LT Blake Fontaine) vs. Winner of (TBD vs. TBD)"
+    "label": "CHAMPIONSHIP: Winner of (Davis Chandler vs. LT Blake Fontaine) vs. Winner of (LT Geoff Welch vs. LT Kellen Gray)"
   }
 }
