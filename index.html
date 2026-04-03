@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules of the Road March Madness</title>
+    <title>Bracket Test Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
@@ -76,7 +76,7 @@
             flex-wrap: wrap;
         }
         button {
-            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;wz
             font-weight: 700;
             font-size: 0.95rem;
             padding: 0.75rem 1.5rem;
@@ -126,7 +126,7 @@
         .bracket {
             display: flex;
             justify-content: center;
-            align-items: flex-start; 
+            align-items: stretch;/*flex-start; */
             gap: 60px;
             min-width: auto;
         }
@@ -143,9 +143,9 @@
         .finals-column {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;/*flex-start*/
             align-items: center;
-            padding-top: 5rem; 
+            padding: 0; /*padding-top*/ /*5rem*/
         }
         .round {
             display: flex;
@@ -289,8 +289,9 @@
             display: block;
             max-width: 750px;
             height: auto;
-            margin-bottom: 3rem;
-      
+			margin-top: 3rem;
+/*            margin-bottom: 3rem; */
+    	    /*background-color: var(--NavyBlack)*/
 		}
         .round1 .team:first-child:not(.winner):not(.loser) {
             border-bottom-color: white;
@@ -323,33 +324,49 @@
         .round6 .match::before {
             display: none;
         }
-/* --- START: Enhanced Final Four & Championship Styles --- */
-/* Style the "FINAL 4" team boxes */
+		/* --- START: Enhanced Final Four & Championship Styles --- */
+		
+		/* Style the "FINAL 4" team boxes */
 		.round5 .team {
-		    min-width: 333px; /* Make them wider */
-		    padding: 15px 10px; /* Increase padding */
-		    font-size: 2.7rem;  /* Make the font larger */
+		    min-width: 300px; /* Make them wider */
+		    padding: 10px 10px; /* Increase padding */
+		    font-size: 2.4rem;  /* Make the font larger */
 		    font-weight: 525;   /* Make text bolder */
-/*            text-align: center;*/
-/* Ensure the hover effect still looks good on the larger championship boxes */
-/*		.round6 .team:hover {
+		}
+		
+		/* Style the "CHAMPIONSHIP" team boxes */
+		.round6 .team {
+		    min-width: 300px;         /* Even wider */
+		    padding: 20px;            /* Generous padding */
+		    font-size: 2rem;          /* Much larger font */
+		    font-weight: 700;         /* Boldest text */
+		    text-align: center;       /* Center the team name */
+		    border-width: 3px;        /* Thicker border */
+		    border-radius: 6px;       /* Slightly more rounded corners */
+		}
+		
+		/* Ensure the hover effect still looks good on the larger championship boxes */
+		.round6 .team:hover {
 		    border-color: var(--Yellow);
 		    background: #FFFEF5;
-		}		
-/* Make the Championship winner state more prominent */
-/*		.round6 .team.winner {
+		}
+		
+		/* Make the Championship winner state more prominent */
+		.round6 .team.winner {
 		    background: var(--NavyBlack);
 		    border-color: var(--Yellow); /* Use yellow border for the champ */
-		    box-shadow: 0 0 11px rgba(232, 176, 15, 0.5); /* Add a yellow glow */
+		    box-shadow: 0 0 25px rgba(232, 176, 15, 0.5); /* Add a yellow glow */
 		}
-/* Remove connecting lines for the final rounds as they don't lead anywhere */
+		
+		/* Remove connecting lines for the final rounds as they don't lead anywhere */
 		.round5 .match::after, .round5 .match::before,
 		.round6 .match::after, .round6 .match::before {
 		    display: none;
 		}
-/* --- END: Enhanced Final Round Styles --- */
+		
+		/* --- END: Enhanced Final Round Styles --- */
 
-/* === FINAL, WORKING CHAMPION MODAL === */
+        /* === FINAL, WORKING CHAMPION MODAL === */
         .champion-overlay {
             position: fixed;
             top: 0;
@@ -391,12 +408,26 @@
             color: white;
             text-transform: uppercase;
         }
+		.bottom-logo {
+			display: block;
+			width: 500px;
+			height: auto;
+			margin: 3.2rem; /*auto 0*/
+		}
+
+		.fantail {
+			display: block;
+			width: 400px;
+			height: auto;
+			margin: 6rem auto 0; 
+		}
+		}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Rules of the Road March Madness </h1>
+            <h1>Rules of the Road March Madness</h1>
             <p class="subtitle">Who rules the Rules?</p>
         </header>
 	<div class="controls">
@@ -482,51 +513,67 @@
         
         function initializeBracket() {
             const bracket = document.getElementById('bracket');
-            bracket.innerHTML = '';
+	            bracket.innerHTML = '';
+
             const leftHalf = document.createElement('div');
-            leftHalf.className = 'bracket-half left';
+    	        leftHalf.className = 'bracket-half left';
+
             const rightHalf = document.createElement('div');
-            rightHalf.className = 'bracket-half right';
+        	    rightHalf.className = 'bracket-half right';
+
             for (let roundIndex = 0; roundIndex < 5; roundIndex++) {
                 const round = rounds[roundIndex];
                 leftHalf.appendChild(createRound(round, roundIndex, 0, round.matches / 2));
                 rightHalf.appendChild(createRound(round, roundIndex, round.matches / 2, round.matches / 2));
             }
             const finalsDiv = document.createElement('div');
-            finalsDiv.className = 'finals-column';
-            const finalsRound = createRound(rounds[5], 5, 0, 1);
+	            finalsDiv.className = 'finals-column';
+				// Create and append the logos in the correct order
             const logo = document.createElement('img');
-            logo.src = 'SWSC_logo.png';
-            logo.alt = 'Bracket Logo';
-            logo.className = 'center-logo';
-            finalsDiv.appendChild(logo);
-            finalsDiv.appendChild(finalsRound);
+	            logo.src = 'SWSC_logo.png';
+	            logo.alt = 'Bracket Logo';
+	            logo.className = 'center-logo';
+	            finalsDiv.appendChild(logo);
+	            // Create the new bottom logo
+/*			const bottomLogo = document.createElement('img');
+	            bottomLogo.src = 'DK2.png'; // Direct file name
+	            bottomLogo.alt = 'DK Logo';
+	            bottomLogo.className = 'bottom-logo'; // Use the new simple CSS class
+	            finalsDiv.appendChild(bottomLogo);
+			const finalsRound = createRound(rounds[5], 5, 0, 1);
+				finalsDiv.appendChild(finalsRound);
+			// Create the new third logo
+            const fantail = document.createElement('img');
+	            fantail.src = 'FanTail.png'; // Direct file name
+	            fantail.alt = 'FanTail';
+	            fantail.className = 'fantail'; // Use the new simple CSS class
+	            finalsDiv.appendChild(fantail); // Appended immediately after bottomLogo */
+            // Add the three main columns to the bracket
             bracket.appendChild(leftHalf);
             bracket.appendChild(finalsDiv);
             bracket.appendChild(rightHalf);
+
             attachClickHandlers();
             attachHoverHandlers();
         }
-
-        function createRound(round, roundIndex, startMatch, matchCount) {
+	function createRound(round, roundIndex, startMatch, matchCount) {
             const roundDiv = document.createElement('div');
-            roundDiv.className = `round ${round.class}`;
+      	      roundDiv.className = `round ${round.class}`;
 
             const header = document.createElement('div');
-            header.className = 'round-header';
-            header.textContent = round.name;
-            roundDiv.appendChild(header);
-
+  	  	        header.className = 'round-header';
+	            header.textContent = round.name;
+  	  	        roundDiv.appendChild(header);
             const matchesDiv = document.createElement('div');
-            matchesDiv.className = 'round-matches';
+            	matchesDiv.className = 'round-matches';
 
             for (let i = 0; i < matchCount; i++) {
                 const matchIndex = startMatch + i;
                 const matchId = `r${roundIndex}-m${matchIndex}`;
                 
                 const matchDiv = document.createElement('div');
-                matchDiv.className = 'match';
-                matchDiv.dataset.matchId = matchId;
+	                matchDiv.className = 'match';
+	                matchDiv.dataset.matchId = matchId;
 
                 // Get the specific match data from the pre-loaded bracketData
                 const matchData = bracketData[matchId];
