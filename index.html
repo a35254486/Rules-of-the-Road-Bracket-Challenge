@@ -323,8 +323,32 @@
         .round6 .match::before {
             display: none;
         }
+/* --- START: Enhanced Final Four & Championship Styles --- */
+/* Style the "FINAL 4" team boxes */
+		.round5 .team {
+		    min-width: 300px; /* Make them wider */
+		    padding: 10px 10px; /* Increase padding */
+		    font-size: 2.4rem;  /* Make the font larger */
+		    font-weight: 525;   /* Make text bolder */
+/* Ensure the hover effect still looks good on the larger championship boxes */
+/*		.round6 .team:hover {
+		    border-color: var(--Yellow);
+		    background: #FFFEF5;
+		}		
+/* Make the Championship winner state more prominent */
+/*		.round6 .team.winner {
+		    background: var(--NavyBlack);
+		    border-color: var(--Yellow); /* Use yellow border for the champ */
+		    box-shadow: 0 0 25px rgba(232, 176, 15, 0.5); /* Add a yellow glow */
+		}
+/* Remove connecting lines for the final rounds as they don't lead anywhere */
+		.round5 .match::after, .round5 .match::before,
+		.round6 .match::after, .round6 .match::before {
+		    display: none;
+		}
+/* --- END: Enhanced Final Round Styles --- */
 
-        /* === FINAL, WORKING CHAMPION MODAL === */
+/* === FINAL, WORKING CHAMPION MODAL === */
         .champion-overlay {
             position: fixed;
             top: 0;
