@@ -864,7 +864,7 @@
         "seed": 5
       }
     ],
-    "winner": null,
+    "winner": 0,
     "label": "FINAL FOUR: Winner of (LT Geoff Welch vs. LT David Harland) vs. Winner of (LT Kellen Gray vs. LT Branner Astrop)"
   },
   "r5-m0": {
@@ -874,8 +874,8 @@
         "seed": 7
       },
       {
-        "name": "TBD",
-        "seed": null
+        "name": "LT Geoff Welch",
+        "seed": 4
       }
     ],
     "winner": null,
