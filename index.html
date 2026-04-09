@@ -330,7 +330,7 @@
 		.round5 .team {
 		    min-width: 300px; /* Make them wider */
 		    padding: 10px 10px; /* Increase padding */
-		    font-size: 2.4rem;  /* Make the font larger */
+		    font-size: 2rem;  /* Make the font larger */
 		    font-weight: 525;   /* Make text bolder */
 		}
 		
@@ -338,8 +338,8 @@
 		.round6 .team {
 		    min-width: 300px;         /* Even wider */
 		    padding: 20px;            /* Generous padding */
-		    font-size: 2rem;          /* Much larger font */
-		    font-weight: 700;         /* Boldest text */
+		    font-size: 2.4rem;          /* Much larger font */
+		    font-weight: 525;         /* Boldest text */
 		    text-align: center;       /* Center the team name */
 		    border-width: 3px;        /* Thicker border */
 		    border-radius: 6px;       /* Slightly more rounded corners */
@@ -534,14 +534,14 @@
 	            logo.alt = 'Bracket Logo';
 	            logo.className = 'center-logo';
 	            finalsDiv.appendChild(logo);
-	            // Create the new bottom logo
+			const finalsRound = createRound(rounds[5], 5, 0, 1);
+				finalsDiv.appendChild(finalsRound);
+			// Create the new bottom logo
 /*			const bottomLogo = document.createElement('img');
 	            bottomLogo.src = 'DK2.png'; // Direct file name
 	            bottomLogo.alt = 'DK Logo';
 	            bottomLogo.className = 'bottom-logo'; // Use the new simple CSS class
 	            finalsDiv.appendChild(bottomLogo);
-			const finalsRound = createRound(rounds[5], 5, 0, 1);
-				finalsDiv.appendChild(finalsRound);
 			// Create the new third logo
             const fantail = document.createElement('img');
 	            fantail.src = 'FanTail.png'; // Direct file name
